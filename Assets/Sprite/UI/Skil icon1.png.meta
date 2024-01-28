@@ -1,0 +1,1586 @@
+fileFormatVersion: 2
+guid: 4a2ea6f511f25634585bd3e60b07403f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skil icon1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 313
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4090fda13038d0247ad9a5bd3e30ec67
+      internalID: -655057377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 313
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61fbad4a118f3d438c2d9d967865e57
+      internalID: -404068136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 313
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03a7051acd586a4f86e51ac3ac02164
+      internalID: 1266849045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 313
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64334089885db16428cb6baf547d6c8b
+      internalID: -2044392423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 313
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c1c7133c58d9b41bf6cd262d7a3e4a
+      internalID: -66391907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 313
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b430293cf8cf084dbecd933aaac5b7a
+      internalID: -1273400960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 313
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310adc1a09b84e644aee97a5864536d9
+      internalID: -1841828613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 313
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca58ed5aba087d46895754bc8476e78
+      internalID: -1604336727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 313
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4728684626fc44448f488c9821fd153
+      internalID: -1116034922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_9
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 312
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215f0975308258348a13d6133bf52b5c
+      internalID: -1995867158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_10
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 313
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b37d0f4d0a2424c8099899ffd33712
+      internalID: 1242942473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c332c0806e203704e85d9718cb8c7dbc
+      internalID: -1624958784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e28ed788d8df8469fb82782b3061dc
+      internalID: -1642614480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 253
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e8caa0bf5843544acfcc4534e4a3b1
+      internalID: 190633130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_14
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36263bac0d01cfc46821d555da624564
+      internalID: 523238052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eff0681b25225c4abc7cb64aea23f9a
+      internalID: -1689291128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 252
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd6cf37a8a24d5439948949eacd9167
+      internalID: -1219740469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_17
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 253
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8635bdd026ea261488cd05e615b6a244
+      internalID: -1897929229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_18
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936fe900c260dc747ac15af17836a6fb
+      internalID: 91470061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_19
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 253
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3698c4988502844c93056e45ac5fe68
+      internalID: -1975751704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_20
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 253
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7185c10d02340f142acd4ef5b5d35f27
+      internalID: 1059946898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_21
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 253
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9b1056c6abf6845b4d389b8cee5539
+      internalID: -1823124247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69c184fe96428d46bbc9b6d649eb4bb
+      internalID: -900196571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_23
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88744c3bc1a2da4409bd7a28ecc28a95
+      internalID: 1022287018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82a4c1db0f4f1a4784ee3f62b4db9f9
+      internalID: -691665455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_25
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 193
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecf67080e671754b9a247782ec8cd3f
+      internalID: -1168654359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_26
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d862dce6e5d1a65439a06292c9b5c7a5
+      internalID: 1567729188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_27
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc71d1ac24afe34aa695295dcf0adcc
+      internalID: 390701278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_28
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 193
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94d20a33dc26d4cb71137ce0f31c6d
+      internalID: -1415160655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57de71bb63c8c5f419d6586f9c65ece2
+      internalID: -1592970805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_30
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 193
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd74a8de1ae1d524bbcccd6a5536cc36
+      internalID: -742581134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_31
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 193
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7f478707a5d2f49af2e18ec319499b
+      internalID: -124802504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_32
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 193
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4762abcda874e47a703fbd22280322
+      internalID: -1574921010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a084e84ddc6c6c44cb51765e936f4b57
+      internalID: 942435722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69956be4526be7e49ac2e3c8677225d8
+      internalID: 2124424744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_35
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 132
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78956473eb5a6b41a0ed8b679dd118e
+      internalID: -1834614082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_36
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413c74cd97a5fb9498f93d87d0dcfaf0
+      internalID: 522095389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_37
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57263534a2cfa54b98b8620e6d77e23
+      internalID: 554179390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_38
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5f41dd9c229b7448a1dc1cdd3cc587
+      internalID: -856654393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_39
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 133
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c16fc150e2e40499dc3718a9921793
+      internalID: -1436748924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_40
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0908ee57d07b745b61feae31b1c2b1
+      internalID: -1820842360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_41
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 133
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67af7023e13f08b42acd05029517c4e5
+      internalID: -1552995453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_42
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 133
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac083d32ba9deca4c87ade7592d41490
+      internalID: -1130353748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_43
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 133
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fbcaeab2b37b74e937a877fb66060b
+      internalID: 1180064047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f64c9b94efa854794f97d0f8184e09
+      internalID: 1634320883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_45
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6229e5c1cc57f41479b0144502ca1367
+      internalID: -1602192407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_46
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09156a8c5e72bb42a2aee43ff64a262
+      internalID: 649774341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_47
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 73
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6603d2514d62e741b97f4d4cd58ea19
+      internalID: 942308121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_48
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6392451732d91fb47aedb83a87501da1
+      internalID: 1256312638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_49
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 73
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efef7a34c079dbe4ab4ed5098c3dd430
+      internalID: 1700586928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_50
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 73
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac0e963085a1684bb249fb51026ccbd
+      internalID: 1496624567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_51
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84da7418aaff6fa479983249e3d8738d
+      internalID: 2068088983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_52
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2796fbfaf27b9f468c3a411799d50d5
+      internalID: 1272014922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_53
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 73
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08331ac0661a6e548a72de9b453a9038
+      internalID: 165254938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_54
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 73
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f6314fab6a691448a289747a784383
+      internalID: -1552040038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_55
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c313765f90346d42bb31ff006ea0fdf
+      internalID: -512195280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_56
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee17c350e2275d43b3a4bb62c7a2132
+      internalID: -1955081236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_57
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 13
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe54bce305630e8418424c4279eaab50
+      internalID: 791220425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_58
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 13
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4925ab20b29944fa0f8f2682ea6e0b
+      internalID: 505991136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_59
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d45b0a331ea7f46a86be3bb4b6196f
+      internalID: -499901558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_60
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12eea422b692034a8c1f19f6f70db94
+      internalID: -1999905071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_61
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a1af7a49b63f64ca0f985e3468ea3c
+      internalID: -1595326094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_62
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352bbc3a9a3c7d9408682b4075bc6564
+      internalID: 503898393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_63
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 13
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac38c271dd612a42ba6d42558a77a0c
+      internalID: -1287230369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_64
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd53ae501f7e4ae409d95179923d0590
+      internalID: 1951519729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skil icon1_65
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 13
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505e2a3026051f6479f8be6ab2970d25
+      internalID: 734831163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Skil icon1_19: -1975751704
+      Skil icon1_51: 2068088983
+      Skil icon1_4: -66391907
+      Skil icon1_50: 1496624567
+      Skil icon1_10: 1242942473
+      Skil icon1_55: -512195280
+      Skil icon1_24: -691665455
+      Skil icon1_13: 190633130
+      Skil icon1_29: -1592970805
+      Skil icon1_16: -1219740469
+      Skil icon1_59: -499901558
+      Skil icon1_18: 91470061
+      Skil icon1_45: -1602192407
+      Skil icon1_21: -1823124247
+      Skil icon1_12: -1642614480
+      Skil icon1_53: 165254938
+      Skil icon1_49: 1700586928
+      Skil icon1_41: -1552995453
+      Skil icon1_6: -1841828613
+      Skil icon1_27: 390701278
+      Skil icon1_30: -742581134
+      Skil icon1_31: -124802504
+      Skil icon1_26: 1567729188
+      Skil icon1_32: -1574921010
+      Skil icon1_36: 522095389
+      Skil icon1_17: -1897929229
+      Skil icon1_35: -1834614082
+      Skil icon1_54: -1552040038
+      Skil icon1_40: -1820842360
+      Skil icon1_20: 1059946898
+      Skil icon1_52: 1272014922
+      Skil icon1_58: 505991136
+      Skil icon1_48: 1256312638
+      Skil icon1_5: -1273400960
+      Skil icon1_2: 1266849045
+      Skil icon1_42: -1130353748
+      Skil icon1_8: -1116034922
+      Skil icon1_11: -1624958784
+      Skil icon1_44: 1634320883
+      Skil icon1_38: -856654393
+      Skil icon1_7: -1604336727
+      Skil icon1_34: 2124424744
+      Skil icon1_43: 1180064047
+      Skil icon1_60: -1999905071
+      Skil icon1_9: -1995867158
+      Skil icon1_62: 503898393
+      Skil icon1_25: -1168654359
+      Skil icon1_0: -655057377
+      Skil icon1_33: 942435722
+      Skil icon1_39: -1436748924
+      Skil icon1_57: 791220425
+      Skil icon1_23: 1022287018
+      Skil icon1_64: 1951519729
+      Skil icon1_37: 554179390
+      Skil icon1_1: -404068136
+      Skil icon1_61: -1595326094
+      Skil icon1_15: -1689291128
+      Skil icon1_63: -1287230369
+      Skil icon1_3: -2044392423
+      Skil icon1_22: -900196571
+      Skil icon1_28: -1415160655
+      Skil icon1_65: 734831163
+      Skil icon1_46: 649774341
+      Skil icon1_47: 942308121
+      Skil icon1_56: -1955081236
+      Skil icon1_14: 523238052
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
