@@ -1,0 +1,1333 @@
+fileFormatVersion: 2
+guid: fa31af48642ab434abd0932c4e9528ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BuffSkill_0
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 7664
+        width: 224
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3487fcb49e285274eaf674ac5ce9675c
+      internalID: -1314247427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_1
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 7689
+        width: 225
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd32f16918c1894aa41d5e0849e40aa
+      internalID: -915495694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_2
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 7701
+        width: 257
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b80536a8616ce4db7e3d82e044d330
+      internalID: 1778127496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_3
+      rect:
+        serializedVersion: 2
+        x: 2885
+        y: 7709
+        width: 285
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80b7133a8d9f764cbe3deedd3be4700
+      internalID: -1985187070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_4
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 7713
+        width: 229
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bf71bda97b0d341896d2993f788597
+      internalID: 356632716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 6962
+        width: 224
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a00d5c24758ae479059c49303b5057
+      internalID: 283745463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_6
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 6966
+        width: 245
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d14ae968e50f940bceafa5f0634896
+      internalID: -1504559653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_7
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 6970
+        width: 286
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277558c0c16b217499dd07d43ecb609f
+      internalID: 1741398008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_8
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 6974
+        width: 229
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b3f9939b3a83044a2fd32de9f39596
+      internalID: 1888153474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_9
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 6978
+        width: 229
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d82f3039d90f74ead616bff4e92b15
+      internalID: -151129526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 6219
+        width: 228
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be731b3395eab4348ab4c44f9e5636ae
+      internalID: 588561655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_11
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 6223
+        width: 257
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5617c32db8a502a4b877d611f2a46ef2
+      internalID: -1834331334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_12
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 6227
+        width: 282
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7017ffd762b98eb4681494127f7f27c2
+      internalID: -286737116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_13
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 6227
+        width: 229
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0c3a39d0a7cc648aa883a6ff60db16
+      internalID: 1166890269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_14
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 6231
+        width: 229
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193b6dba9b7c1f54c928aa85c7aefc84
+      internalID: -253153900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5472
+        width: 245
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2996c03c3411bc64c9084f108be7e800
+      internalID: -1347639219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_16
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 5472
+        width: 281
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8831d558fd6ff4cbc60ba887758f30
+      internalID: 77047447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_17
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 5476
+        width: 232
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c059ffb82694043a3a3fedcbcf72a1
+      internalID: 1691373703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_18
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 5476
+        width: 233
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a9a7c302a26f246904c548fe74a61d
+      internalID: 23130363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_19
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 5480
+        width: 233
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a39a2a0cc75f5a46a456fec3f659080
+      internalID: -1085700597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 4721
+        width: 257
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.29}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc582b1ee171f1479757a914bc56f86
+      internalID: 1018712502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_21
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 4721
+        width: 281
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95c839688bcad64985214de02b7ad42
+      internalID: 1786626835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_22
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 4721
+        width: 232
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ea8420d154f784ba9af709757aa287
+      internalID: -1560834746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_23
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 4721
+        width: 233
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6a4ae44d382eb469da0234a8059046
+      internalID: 44924775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_24
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 4721
+        width: 241
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f7c59fa89d23a42a3d804212cc7ad8
+      internalID: 1745347003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_25
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 3962
+        width: 286
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a1ec682d51a1a478688389d5bd9e77
+      internalID: 966431371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_26
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 3962
+        width: 232
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749ebdfdfd8ba0849a594ceffb9323f9
+      internalID: -1182108026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_27
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 3962
+        width: 232
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5e78b65e779cc40b793af2a53e6a4b
+      internalID: -1267262344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_28
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 3962
+        width: 229
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0fc58392fd5a14fb7463241e61fdf8
+      internalID: 132534052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_29
+      rect:
+        serializedVersion: 2
+        x: 3758
+        y: 3958
+        width: 257
+        height: 306
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fc45c2803008a4286e10b162af5ca7
+      internalID: 1530985040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_30
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 3194
+        width: 286
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a10e4f4c7b7c7a49ae71998bb04ff0f
+      internalID: 428722554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_31
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 3186
+        width: 240
+        height: 339
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf6343ed79f1cf43b29e7c45099cb8d
+      internalID: 2032619940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_32
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 3178
+        width: 278
+        height: 375
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1832252337ff9248bc39a881a319512
+      internalID: -533081872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_33
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 3166
+        width: 265
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4c6177efbcddf4c8d6cb6a4db8f6c4
+      internalID: 782658027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_34
+      rect:
+        serializedVersion: 2
+        x: 3746
+        y: 3153
+        width: 282
+        height: 421
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69a5b873f1c74d4e8eed6134b819afd
+      internalID: 1806890973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_35
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2370
+        width: 298
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5387b5dc70f5174d96cac7b23a15cb4
+      internalID: -1337189699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_36
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2410
+        width: 335
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee55ce4cc24ac9a458f8b53df751547a
+      internalID: -1898859020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_37
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 2410
+        width: 325
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b683cb1f2243c74b88598354313b4aa
+      internalID: -16416765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_41
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 2418
+        width: 317
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ed6ce39da22564b8eb605c2b071fc8
+      internalID: -2047633591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_42
+      rect:
+        serializedVersion: 2
+        x: 3709
+        y: 2448
+        width: 349
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f399a2bfe9f4944a90da947580fafa
+      internalID: -1365867862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_43
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1737
+        width: 360
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee2721fac84e934bbe493a0df943eaf
+      internalID: 712015283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_44
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 1753
+        width: 393
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d424cf62c043e47bbd6dd62122b002
+      internalID: 836304253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_46
+      rect:
+        serializedVersion: 2
+        x: 3679
+        y: 1773
+        width: 409
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b18270a49ef3e4eb6adfd639bb9ab9
+      internalID: -1168047622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1713
+        width: 402
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4c9f429b8ab8f418c4073a67af3358
+      internalID: 227177387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_50
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 1713
+        width: 370
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c234660b0ba83479f9a413d961acdb
+      internalID: 1886822482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_78
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1028
+        width: 413
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552ad86f5029ac1499a7810fd73b6ac2
+      internalID: 1202757188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_87
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1028
+        width: 405
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a326dce850a1f543bcd200a99156fc7
+      internalID: 1351989882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_89
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1056
+        width: 417
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979c4924527116f4f8215c14376e6113
+      internalID: -1597577168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_90
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 1028
+        width: 323
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e6fa0de9f13cd439779b69b5deea34
+      internalID: 29079251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_92
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 1028
+        width: 322
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b688879f4e89beb46849e56699aed69f
+      internalID: -992511764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_103
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 356
+        width: 338
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfdd9391cd5b064981ff7ea55be921e
+      internalID: 1928361863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuffSkill_105
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 346
+        width: 345
+        height: 465
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11a0fac12614e4429e3fb54382623e1
+      internalID: -1171222186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BuffSkill_46: -1168047622
+      BuffSkill_62: 15020303
+      BuffSkill_63: 344825571
+      BuffSkill_32: -533081872
+      BuffSkill_82: -473219841
+      BuffSkill_26: -1182108026
+      BuffSkill_69: 1723168850
+      BuffSkill_2: 1778127496
+      BuffSkill_96: -113237621
+      BuffSkill_43: 712015283
+      BuffSkill_65: 1694031218
+      BuffSkill_9: -151129526
+      BuffSkill_15: -1347639219
+      BuffSkill_88: -1354297570
+      BuffSkill_45: -1706353880
+      BuffSkill_11: -1834331334
+      BuffSkill_6: -1504559653
+      BuffSkill_39: 1373958959
+      BuffSkill_71: -1191054587
+      BuffSkill_25: 966431371
+      BuffSkill_59: 2120329228
+      BuffSkill_4: 356632716
+      BuffSkill_97: 1765349919
+      BuffSkill_31: 2032619940
+      BuffSkill_47: -1326394738
+      BuffSkill_34: 1806890973
+      BuffSkill_79: -1113162598
+      BuffSkill_98: -1634783947
+      BuffSkill_20: 1018712502
+      BuffSkill_3: -1985187070
+      BuffSkill_30: 428722554
+      BuffSkill_58: 2027985250
+      BuffSkill_105: -1171222186
+      BuffSkill_83: -1786293972
+      BuffSkill_23: 44924775
+      BuffSkill_60: 1152134084
+      BuffSkill_29: 1530985040
+      BuffSkill_72: 1212888981
+      BuffSkill_64: 1285373390
+      BuffSkill_37: -16416765
+      BuffSkill_101: -1373218764
+      BuffSkill_52: 708896338
+      BuffSkill_99: 769483002
+      BuffSkill_18: 23130363
+      BuffSkill_103: 1928361863
+      BuffSkill_40: -438632972
+      BuffSkill_94: -254662028
+      BuffSkill_55: -869591227
+      BuffSkill_10: 588561655
+      BuffSkill_90: 29079251
+      BuffSkill_41: -2047633591
+      BuffSkill_85: -1285807630
+      BuffSkill_0: -1314247427
+      BuffSkill_95: -133749665
+      BuffSkill_1: -915495694
+      BuffSkill_92: -992511764
+      BuffSkill_50: 1886822482
+      BuffSkill_12: -286737116
+      BuffSkill_48: 1041451438
+      BuffSkill_33: 782658027
+      BuffSkill_80: -1235179039
+      BuffSkill_89: -1597577168
+      BuffSkill_102: 1844943575
+      BuffSkill_16: 77047447
+      BuffSkill_44: 836304253
+      BuffSkill_104: -1025468674
+      BuffSkill_24: 1745347003
+      BuffSkill_7: 1741398008
+      BuffSkill_78: 1202757188
+      BuffSkill_28: 132534052
+      BuffSkill_61: -731571685
+      BuffSkill_56: -2138990875
+      BuffSkill_42: -1365867862
+      BuffSkill_8: 1888153474
+      BuffSkill_57: 32082728
+      BuffSkill_19: -1085700597
+      BuffSkill_74: 356728657
+      BuffSkill_93: -1288420056
+      BuffSkill_17: 1691373703
+      BuffSkill_70: 1732133598
+      BuffSkill_27: -1267262344
+      BuffSkill_84: 1605740137
+      BuffSkill_21: 1786626835
+      BuffSkill_81: 1819230921
+      BuffSkill_100: 1928713940
+      BuffSkill_106: -557968593
+      BuffSkill_68: 1724479808
+      BuffSkill_91: 1481470445
+      BuffSkill_49: 227177387
+      BuffSkill_14: -253153900
+      BuffSkill_13: 1166890269
+      BuffSkill_87: 1351989882
+      BuffSkill_77: 649594062
+      BuffSkill_66: -1170998370
+      BuffSkill_22: -1560834746
+      BuffSkill_67: -1253526446
+      BuffSkill_76: 1761018508
+      BuffSkill_36: -1898859020
+      BuffSkill_73: -1321244101
+      BuffSkill_35: -1337189699
+      BuffSkill_5: 283745463
+      BuffSkill_51: -53719729
+      BuffSkill_38: -1159027827
+      BuffSkill_53: 426717831
+      BuffSkill_54: 676976612
+      BuffSkill_86: 1255867907
+      BuffSkill_75: -1324990997
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
