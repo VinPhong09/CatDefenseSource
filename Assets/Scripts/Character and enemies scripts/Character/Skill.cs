@@ -5,7 +5,6 @@ using System;
 [System.Serializable]
   public class Skill 
 {
-        
         public string _Name;
         public Sprite _Image;
         public string _Description;
