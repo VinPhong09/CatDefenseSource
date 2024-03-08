@@ -14,15 +14,15 @@ public abstract class CharacterView : MonoBehaviour
     [Header("Skill UI")]
     public List<Skill> skills;
 
-    private CharacterEvent _characterEvent;
-    private Animator _characterAnimation;
+    protected CharacterEvent CharacterEvent;
+    protected Animator CharacterAnimation;
     private float _currentVelocity = 0;
     private float _moveSpeed = 2;
     
     public void Initialize()
     {
-        _characterAnimation = gameObject.GetComponent<Animator>();
-        _characterEvent = gameObject.GetComponent<CharacterEvent>();
+        CharacterAnimation = gameObject.GetComponent<Animator>();
+        CharacterEvent = gameObject.GetComponent<CharacterEvent>();
     }
 
     public void EventRegister()
@@ -65,13 +65,13 @@ public abstract class CharacterView : MonoBehaviour
     #region Action Handle
     public void Move()
     {
+        Debug.Log("Move");
                 EnemyScripts _ClosetE;
                 _ClosetE = null;
                 EnemyScripts [] _AllEnemy = GameObject.FindObjectsOfType<EnemyScripts>();
 
                 foreach(EnemyScripts _CurrenEnemy in _AllEnemy)
                 {
-                    if(_CurrenEnemy.getIsChoose()== false)
                         _ClosetE = _CurrenEnemy;
                 }
                 
@@ -91,12 +91,13 @@ public abstract class CharacterView : MonoBehaviour
                     if(Vector2.Distance(gameObject.transform.position,_ClosetE.transform.position) >= 0.1f)
                     {
                         OnAnimation(AnimationState.Idle);
-                    
+                        
                     }
                     
             }
 
     }
+
     
     public void flipObject(GameObject Ob)
     {

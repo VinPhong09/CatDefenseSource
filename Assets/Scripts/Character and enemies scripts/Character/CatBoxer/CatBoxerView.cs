@@ -5,22 +5,16 @@ using UnityEngine;
 public class CatBoxerView : CharacterView
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public override void OnAnimation(AnimationState animationState)
     {
         switch (animationState)
         {
             case AnimationState.Idle:
+                    base.CharacterAnimation.CrossFade(AnimationState.Idle.ToString(), 0, 0);
                 break;
             case AnimationState.Move:
                 break;

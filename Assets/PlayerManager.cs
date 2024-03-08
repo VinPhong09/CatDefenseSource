@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    public GameObject Ins;
     public CharacterView characterView;
 
     public CharacterModel characterModel;
@@ -15,9 +16,11 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         characterModel = new CatBoxerModel();
-        characterView = gameObject.AddComponent<CatBoxerView>();
-        characterEvent = new CharacterEvent();
+        characterView = Ins.gameObject.GetComponent<CatBoxerView>();
+        characterEvent = Ins.gameObject.AddComponent<CharacterEvent>();
         characterController = new CharacterController(characterModel, characterView, characterEvent);
+        characterController.Initialize();
+       
     }
 
     // Update is called once per frame

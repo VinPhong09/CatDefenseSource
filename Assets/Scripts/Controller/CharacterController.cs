@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Interface;
 using UnityEngine;
 
-public class CharacterController : IController, IHealth
+public class CharacterController : IController
 {
     private CharacterModel _characterModel;
     private CharacterView _characterView;
@@ -22,12 +22,29 @@ public class CharacterController : IController, IHealth
         this._characterEvent = characterEvent;
     }
 
+    public void Initialize()
+    {
+        _characterView.Initialize();
+        EventRegister();
+    }
+
     public void Handle()
     {
         _characterView.OnUpdate();
+      
     }
-    
- 
+
+    public void EventRegister()
+    {
+        _characterEvent.OnTakeDamage += TakeDamage;
+        _characterEvent.OnHeal += Heal;
+    }
+
+    public void EventUnRegister()
+    {
+        _characterEvent.OnTakeDamage -= TakeDamage;
+        _characterEvent.OnHeal -= Heal;
+    }
 
 
     public void Move()
@@ -40,9 +57,10 @@ public class CharacterController : IController, IHealth
         
     }
 
-    public virtual void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         _characterModel.CurrentHealth -= damage;
+        Debug.Log("CurH" + _characterModel.CurrentHealth);
         _characterView.ShowDamagePopUp(damage);
         _characterView.OnHealthChange(_characterModel.CurrentHealth);
         if (_characterModel.CurrentHealth <= 0)
@@ -50,8 +68,8 @@ public class CharacterController : IController, IHealth
             _characterView.OnAnimation(AnimationState.Die);
         }
     }
-
-    public virtual void Heal(int healthAmount)
+    
+    public void Heal(int healthAmount)
     {
         _characterModel.CurrentHealth += healthAmount;
         _characterView.ShowHealPopUp(healthAmount);

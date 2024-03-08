@@ -76,7 +76,7 @@ public class Spawn : MonoBehaviour
             _countEnemy++;   
             GameObject EnemyGO = Instantiate(_EnemyPrefabs[0],new Vector2(_EnemySpawnPosition.transform.position.x,_EnemySpawnPosition.transform.position.y + Random.Range(0f,-3f)) , Quaternion.identity) as GameObject;
             EnemyGO.GetComponent<EnemyHealth>().SetHealthEnemy(_HealthLV);
-            EnemyGO.GetComponentInChildren<HitBoxE>().setDamageEnemy(_DamageLv);
+            EnemyGO.GetComponentInChildren<HitBoxE>().setDamageEnemy((int)_DamageLv);
         }
     }
 

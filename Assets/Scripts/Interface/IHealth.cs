@@ -3,15 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IHealth 
+public interface IHealth
 {
-    public void TakeDamage(float _Damage)
-    { }
-    public void Heal(float _HealthAmount)
-    { }
+    public void TakeDamage(int damage);
 
-    public float GetHealth()
-    {
-        return 0;
-    }
+    public void Heal(int healthAmount);
+
+    public float GetHealth();
 }

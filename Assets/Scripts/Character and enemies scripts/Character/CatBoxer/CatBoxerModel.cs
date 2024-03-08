@@ -19,6 +19,7 @@ public class CatBoxerModel : CharacterModel
         
         //Set Begin Health
         MaxHealth = 200;
+        CurrentHealth = MaxHealth;
         
         //Set RageDMG
         RateDamage = 0;

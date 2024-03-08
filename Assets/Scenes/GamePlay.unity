@@ -4145,7 +4145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8620848626332310227, guid: 1ac0daf66ccb03e41a5019418a030852, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.988672
+      value: 6.42
       objectReference: {fileID: 0}
     - target: {fileID: 8620848626332310227, guid: 1ac0daf66ccb03e41a5019418a030852, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17639,7 +17639,7 @@ RectTransform:
   m_Father: {fileID: 1954336569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 7.4100037, y: -5.7299995}
   m_SizeDelta: {x: 0.1, y: -50.4}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20203,7 +20203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224517f322319434991aa5100ecda271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ins: {fileID: 0}
   characterView: {fileID: 0}
+  characterEvent: {fileID: 0}
 --- !u!1 &1694132284
 GameObject:
   m_ObjectHideFlags: 0
@@ -21720,7 +21722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224517f322319434991aa5100ecda271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterView: {fileID: 0}
+  Ins: {fileID: 4235178158848508337}
+  characterView: {fileID: 8198396383426758838}
+  characterEvent: {fileID: 0}
 --- !u!4 &1809763318
 Transform:
   m_ObjectHideFlags: 0
@@ -25259,7 +25263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1964706515
 Transform:
   m_ObjectHideFlags: 0

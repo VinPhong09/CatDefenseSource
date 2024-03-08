@@ -5,7 +5,7 @@ using UnityEngine;
 public class HitBoxE : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] protected float _Damage;
+    [SerializeField] protected int _Damage;
 
     EnemyScripts _EnemyScripts;
     void Start()
@@ -19,23 +19,22 @@ public class HitBoxE : MonoBehaviour
         
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Character")
+        if(other.gameObject.CompareTag("Character"))
         {
-            CharHealth _Chealth= other.gameObject.GetComponent<CharHealth>();
-            if(other is CapsuleCollider2D)
-               _Chealth.addDamage(_Damage);
-            if(_Chealth.getHealthPlayer() <= 0)
-                Invoke("IsDead",0);
-                
+            IHealth iHealth = other.gameObject.GetComponent<IHealth>();
+            if (other is CapsuleCollider2D)
+            {
+                iHealth.TakeDamage(_Damage);
+            } 
         }
-        if(other.gameObject.tag == "Tower")
+        if(other.gameObject.CompareTag("Tower"))
          {
-            TowerScripts _TowerHealth = other.gameObject.GetComponent<TowerScripts>();
-            _TowerHealth.addDamage(_Damage);
+            TowerScripts towerHealth = other.gameObject.GetComponent<TowerScripts>();
+            towerHealth.addDamage(_Damage);
          }
     }
 
-    public void setDamageEnemy(float _Damage)
+    public void setDamageEnemy(int _Damage)
     {
         this._Damage += _Damage;
     }
