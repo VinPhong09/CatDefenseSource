@@ -27,5 +27,10 @@ public class CharacterModel : BaseModel, IModel
     public bool IsUnlock { get; set; }
     public bool IsDead { get; set; }
 
-  
+    public Dictionary<string, ISkill> Skills;
+
+    public override void Initialize()
+    {
+        Skills = new Dictionary<string, ISkill>();
+    }
 }

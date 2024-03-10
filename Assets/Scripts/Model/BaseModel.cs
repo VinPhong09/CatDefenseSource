@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class BaseModel: IModel
 {
- 
+    public virtual void Initialize()
+    {
+        throw new System.NotImplementedException();
+    }
 }

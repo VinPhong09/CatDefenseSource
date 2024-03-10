@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public interface IModel
+  public class Skill : BaseSkill
 {
-    public void Initialize();
+        
+        
 }

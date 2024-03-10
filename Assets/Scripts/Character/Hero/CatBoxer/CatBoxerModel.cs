@@ -26,4 +26,5 @@ public class CatBoxerModel : CharacterModel
         //Set CritRate
         CritRate = 0;
     }
+    
 }
