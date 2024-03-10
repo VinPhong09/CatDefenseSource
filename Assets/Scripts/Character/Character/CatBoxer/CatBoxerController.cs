@@ -22,7 +22,6 @@ public class CatBoxerController : CharacterController, IController
 
     public void Handle()
     {
-        Debug.Log("Runn");
         CharacterView.OnUpdate();
         base.DetectEnemies();
     }

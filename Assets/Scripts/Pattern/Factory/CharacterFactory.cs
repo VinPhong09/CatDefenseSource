@@ -22,10 +22,11 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     }
     private void CreateHeroByName(CharacterName characterName)
     {
+        CharacterType characterHero = CharacterType.Hero;
         switch (characterName)
         {
             case CharacterName.CatBoxer:
-                CreateObject(CharacterName.CatBoxer,new CatBoxerModel(),new CatBoxerController());
+                CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController());
                 break;
             
         }
@@ -40,7 +41,7 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
         throw new System.NotImplementedException();
     }
 
-    public void CreateObject(CharacterName characterName,CharacterModel characterModel,
+    public void CreateObject(CharacterType characterType, CharacterName characterName,CharacterModel characterModel,
         IController characterController)
     {
         var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterName.ToString());
@@ -51,7 +52,7 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
         var Controller = characterController;
         Controller.SetData(Model,View,characterEvent);
         Controller.Initialize();
+        CharacterManager.Instance.AddController(characterName, Controller);
+        CharacterManager.Instance.AddCharacter(characterType, characterName, gameObject);
     }
-
-    
 }

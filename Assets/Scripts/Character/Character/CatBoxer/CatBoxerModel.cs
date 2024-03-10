@@ -8,7 +8,7 @@ public class CatBoxerModel : CharacterModel
     {
         MoveSpeed = 2;
         AttackSpeed = 0.5f;
-        AttackRange = 0.1f;
+        AttackRange = 1f;
         //set BeginLevel
         Level = 1;
         CurrentExp = 0;

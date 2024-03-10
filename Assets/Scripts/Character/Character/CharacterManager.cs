@@ -6,13 +6,15 @@ using Interface;
 
 public class CharacterManager : Singleton<CharacterManager>
 {
+    private Dictionary<CharacterType, Dictionary<CharacterName, GameObject>> _charactersDictionary;
     private CharacterFactory _characterFactory;
-    private List<IController> _controllers;
+    private Dictionary<CharacterName,IController> _controllersDictionary;
     private IController _characterController;
-    
+
     public void Initialize()
     {
-        _controllers = new List<IController>();
+        _controllersDictionary = new Dictionary<CharacterName, IController>();
+        _charactersDictionary = new Dictionary<CharacterType, Dictionary<CharacterName, GameObject>>();
     }
 
     public void CreateCharacter()
@@ -22,27 +24,31 @@ public class CharacterManager : Singleton<CharacterManager>
     }
     public void Handle()
     {
-        _characterController.Handle();
+        HandleController();
     }
 
-    public void AddController(IController controller)
+    public void AddController(CharacterName key,IController value)
     {
-        _controllers.Add(controller);
-    }
-    public List<Character> allCharacters;
-
-    public void AddCharacter(Character character)
-    {
-        allCharacters.Add(character);
+        _controllersDictionary.Add(key, value);
     }
 
-    public void RemoveCharacter(Character character)
+    public void AddCharacter(CharacterType key, CharacterName characterName, GameObject gameObject)
     {
-        allCharacters.Remove(character);
+        var dict = new Dictionary<CharacterName, GameObject>();
+        dict.Add(characterName, gameObject);
+        _charactersDictionary.Add(key, dict);
     }
 
-    public Character GetCharacterByName(string name)
+    public void RemoveCharacterByName()
     {
-        return allCharacters.Find(character => character._Name == name);
+        
+    }
+
+    private void HandleController()
+    {
+        foreach (var controller in _controllersDictionary)
+        {
+            controller.Value.Handle();
+        }
     }
 }

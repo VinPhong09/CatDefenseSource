@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuUIManage : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
     // Start is called before the first frame update
     [SerializeField] protected GameObject _GuideUI;

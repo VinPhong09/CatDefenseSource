@@ -52,9 +52,8 @@ public class CharacterController : BaseController,IController
     }
 
 
-    public void Move()
+    public virtual void Move()
     {
-        
         var position = CharacterView.GetPosition();
         ClosetEnemy.setIsChoose(true);
         if (Moving)
@@ -64,16 +63,7 @@ public class CharacterController : BaseController,IController
                 CharacterModel.MoveSpeed * Time.fixedDeltaTime));
             CharacterView.OnAnimation(AnimationState.Move);
         }
-
-        if (Vector2.Distance(position, ClosetEnemy.transform.position) <= CharacterModel.AttackRange)
-        {
-            Moving = false;
-            CharacterView.OnAnimation(AnimationState.NormalAttack);
-        }
-        else 
-        {
-            Moving = true;
-        }
+        
     }
 
     public virtual void Attack() // Attack Event in Animation
@@ -116,7 +106,7 @@ public class CharacterController : BaseController,IController
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
         if (CharacterModel.CurrentHealth <= 0)
         {
-            CharacterView.OnAnimation(AnimationState.Die);
+            Die();
         }
     }
 
@@ -127,8 +117,10 @@ public class CharacterController : BaseController,IController
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
     }
 
-    /*public int GetHealth()
+    public void Die()
     {
-        return _characterModel.CurrentHealth;
-    }*/
+        CharacterView.OnAnimation(AnimationState.Die);
+        EventUnRegister();
+    }
+    
 }
