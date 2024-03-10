@@ -9,5 +9,4 @@ public class DestroyPopUpDamage : MonoBehaviour
     {
        Destroy(gameObject,0.5f);
     }
-
 }
