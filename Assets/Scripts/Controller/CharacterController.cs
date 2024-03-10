@@ -3,77 +3,128 @@ using System.Collections;
 using System.Collections.Generic;
 using Interface;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
-public class CharacterController : IController
+public class CharacterController : BaseController,IController
 {
-    private CharacterModel _characterModel;
-    private CharacterView _characterView;
+    protected CharacterModel CharacterModel;
+    protected CharacterView CharacterView;
+    protected CharacterEvent CharacterEvent;
 
-    private CharacterEvent _characterEvent;
-    /*public event Action<int> OnTakeDamage;
-    public event Action<int> OnHeal;
-    public event Func<int> GetHP;*/
-    
-    
-    public CharacterController(CharacterModel characterModel, CharacterView characterView, CharacterEvent characterEvent)
+    protected EnemyScripts ClosetEnemy;
+    protected bool Moving;
+
+    public void SetData(IModel characterModel, IView characterView,
+        CharacterEvent characterEvent)
     {
-        this._characterModel = characterModel;
-        this._characterView = characterView;
-        this._characterEvent = characterEvent;
+        this.CharacterModel = (CharacterModel)characterModel;
+        this.CharacterView = (CharacterView)characterView;
+        this.CharacterEvent = characterEvent;
     }
 
     public void Initialize()
     {
-        _characterView.Initialize();
+        CharacterView.Initialize();
         EventRegister();
+
+        Moving = true;
+        ClosetEnemy = null;
     }
 
     public void Handle()
     {
-        _characterView.OnUpdate();
-      
+        CharacterView.OnUpdate();
+        DetectEnemies();
     }
 
     public void EventRegister()
     {
-        _characterEvent.OnTakeDamage += TakeDamage;
-        _characterEvent.OnHeal += Heal;
+        CharacterEvent.OnTakeDamage += TakeDamage;
+        CharacterEvent.OnHeal += Heal;
+        CharacterEvent.OnAttack += Attack;
     }
 
     public void EventUnRegister()
     {
-        _characterEvent.OnTakeDamage -= TakeDamage;
-        _characterEvent.OnHeal -= Heal;
+        CharacterEvent.OnTakeDamage -= TakeDamage;
+        CharacterEvent.OnHeal -= Heal;
+        CharacterEvent.OnAttack -= Attack;
     }
 
 
     public void Move()
     {
-        throw new NotImplementedException();
+        
+        var position = CharacterView.GetPosition();
+        ClosetEnemy.setIsChoose(true);
+        if (Moving)
+        {
+            CharacterView.FlipObject(ClosetEnemy.gameObject);
+            CharacterView.SetPosition(Vector2.MoveTowards(position, ClosetEnemy.transform.position,
+                CharacterModel.MoveSpeed * Time.fixedDeltaTime));
+            CharacterView.OnAnimation(AnimationState.Move);
+        }
+
+        if (Vector2.Distance(position, ClosetEnemy.transform.position) <= CharacterModel.AttackRange)
+        {
+            Moving = false;
+            CharacterView.OnAnimation(AnimationState.NormalAttack);
+        }
+        else 
+        {
+            Moving = true;
+        }
     }
 
-    public virtual void Attack()
+    public virtual void Attack() // Attack Event in Animation
     {
-        
+        var enemyHealth = ClosetEnemy.GetComponent<EnemyHealth>();
+        enemyHealth.addDamage(CharacterModel.DamageMin,"d");
     }
+
+    public void DetectEnemies()
+    {
+        EnemyScripts[] allEnemy = Object.FindObjectsOfType<EnemyScripts>();
+        foreach (EnemyScripts currenEnemy in allEnemy)
+        {
+            ClosetEnemy = currenEnemy;
+        }
+        if (ClosetEnemy == null)
+        {
+            CharacterView.OnAnimation(AnimationState.Idle);
+            return;
+        }
+        Move();
+        var position = CharacterView.GetPosition();
+        if (Vector2.Distance(position, ClosetEnemy.transform.position) <= CharacterModel.AttackRange)
+        {
+            CharacterView.SetPosition(position);
+            Moving = false;
+            CharacterView.OnAnimation(AnimationState.NormalAttack);
+        }
+        else 
+        {
+            Moving = true;
+        }
+    }
+
 
     public void TakeDamage(int damage)
     {
-        _characterModel.CurrentHealth -= damage;
-        Debug.Log("CurH" + _characterModel.CurrentHealth);
-        _characterView.ShowDamagePopUp(damage);
-        _characterView.OnHealthChange(_characterModel.CurrentHealth);
-        if (_characterModel.CurrentHealth <= 0)
+        CharacterModel.CurrentHealth -= damage;
+        CharacterView.ShowDamagePopUp(damage);
+        CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
+        if (CharacterModel.CurrentHealth <= 0)
         {
-            _characterView.OnAnimation(AnimationState.Die);
+            CharacterView.OnAnimation(AnimationState.Die);
         }
     }
-    
+
     public void Heal(int healthAmount)
     {
-        _characterModel.CurrentHealth += healthAmount;
-        _characterView.ShowHealPopUp(healthAmount);
-        _characterView.OnHealthChange(_characterModel.CurrentHealth);
+        CharacterModel.CurrentHealth += healthAmount;
+        CharacterView.ShowHealPopUp(healthAmount);
+        CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
     }
 
     /*public int GetHealth()

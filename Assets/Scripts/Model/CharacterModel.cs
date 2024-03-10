@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterModel 
+public class CharacterModel : BaseModel, IModel
 {
-    [Header("Character Properties")]
+    [Header("Character Stat")]
     public float MoveSpeed { get; set; }
-
+    
+    public float AttackRange { get; set; }
+    public float AttackSpeed { get; set; }
     public int Level { get; set; }
     public float Exp { get; set; }
     public float CurrentExp { get; set; }
@@ -19,7 +21,7 @@ public class CharacterModel
     public int MaxHealth { get; set; }
     public int CurrentHealth { get; set; }
 
-    public float RateDamage { get; set; }
+    public float CritRate { get; set; }
 
     public bool IsFight { get; set; }
     public bool IsUnlock { get; set; }
