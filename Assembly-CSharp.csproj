@@ -140,8 +140,8 @@
     <Compile Include="Assets\Scripts\Character and enemies scripts\Enemy\HitBoxE.cs" />
     <Compile Include="Assets\Scripts\Character and enemies scripts\Character\CatHammer\CatHammerFindEnemyToAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Scripts\Character and enemies scripts\Pet\Pet.cs" />
     <Compile Include="Assets\Scripts\Character and enemies scripts\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Character and enemies scripts\Pet\Pet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\EventScripts\UIManageScriptInGamePlay.cs" />
     <Compile Include="Assets\Scripts\Spawn Scripts\Spawn.cs" />
@@ -153,8 +153,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\Model\BaseModel.cs" />
     <Compile Include="Assets\Scripts\Character and enemies scripts\Character\CatVampire\CatVampireScripts.cs" />
-    <Compile Include="Assets\Scripts\Spawn\Spawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Scripts\Spawn\Spawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\GameManagementScripts.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
