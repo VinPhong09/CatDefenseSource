@@ -4,10 +4,9 @@ using UnityEngine;
 using System;
 using Interface;
 
-public class CharacterManager : MonoBehaviour
+public class CharacterManager : Singleton<CharacterManager>
 {
     private CharacterFactory _characterFactory;
-    
     private List<IController> _controllers;
     private IController _characterController;
     
