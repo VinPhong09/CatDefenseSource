@@ -6,8 +6,7 @@ using UnityEngine;
 public interface IHealth
 {
     public void TakeDamage(int damage);
-
     public void Heal(int healthAmount);
-
-    public float GetHealth();
+    public void Die();
+    public int GetHealth();
 }

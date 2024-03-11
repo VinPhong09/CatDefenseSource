@@ -5,13 +5,13 @@ using Interface;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class CharacterController : BaseController,IController
+public abstract class CharacterController : BaseController, IController
 {
     protected CharacterModel CharacterModel;
     protected CharacterView CharacterView;
     protected CharacterEvent CharacterEvent;
 
-    protected EnemyScripts ClosetEnemy;
+    protected GameObject Target; 
     protected bool Moving;
 
     public void SetData(IModel characterModel, IView characterView,
@@ -28,13 +28,12 @@ public class CharacterController : BaseController,IController
         EventRegister();
 
         Moving = true;
-        ClosetEnemy = null;
+        Target = null;
     }
 
-    public void Handle()
+    public virtual void Handle()
     {
-        CharacterView.OnUpdate();
-        DetectEnemies();
+        DetectTarget();
     }
 
     public void EventRegister()
@@ -42,6 +41,8 @@ public class CharacterController : BaseController,IController
         CharacterEvent.OnTakeDamage += TakeDamage;
         CharacterEvent.OnHeal += Heal;
         CharacterEvent.OnAttack += Attack;
+        CharacterEvent.OnDie += Die;
+        CharacterEvent.OnGetHealth += GetHealth;
     }
 
     public void EventUnRegister()
@@ -49,60 +50,28 @@ public class CharacterController : BaseController,IController
         CharacterEvent.OnTakeDamage -= TakeDamage;
         CharacterEvent.OnHeal -= Heal;
         CharacterEvent.OnAttack -= Attack;
+        CharacterEvent.OnDie -= Die;
+        CharacterEvent.OnGetHealth -= GetHealth;
     }
 
 
-    public virtual void Move()
+    public abstract void Move();
+    public abstract void DetectTarget();
+    
+    public virtual void Attack() // Attack when Event in Animation is trigger
     {
-        var position = CharacterView.GetPosition();
-        ClosetEnemy.setIsChoose(true);
-        if (Moving)
+        var health = Target.GetComponent<IHealth>();
+        health.TakeDamage(CharacterModel.DamageMin);
+        if (health.GetHealth() <= 0)
         {
-            CharacterView.FlipObject(ClosetEnemy.gameObject);
-            CharacterView.SetPosition(Vector2.MoveTowards(position, ClosetEnemy.transform.position,
-                CharacterModel.MoveSpeed * Time.fixedDeltaTime));
-            CharacterView.OnAnimation(AnimationState.Move);
-        }
-        
-    }
-
-    public virtual void Attack() // Attack Event in Animation
-    {
-        var enemyHealth = ClosetEnemy.GetComponent<EnemyHealth>();
-        enemyHealth.addDamage(CharacterModel.DamageMin,"d");
-    }
-
-    public void DetectEnemies()
-    {
-        EnemyScripts[] allEnemy = Object.FindObjectsOfType<EnemyScripts>();
-        foreach (EnemyScripts currenEnemy in allEnemy)
-        {
-            ClosetEnemy = currenEnemy;
-        }
-        if (ClosetEnemy == null)
-        {
-            CharacterView.OnAnimation(AnimationState.Idle);
-            return;
-        }
-        Move();
-        var position = CharacterView.GetPosition();
-        if (Vector2.Distance(position, ClosetEnemy.transform.position) <= CharacterModel.AttackRange)
-        {
-            CharacterView.SetPosition(position);
-            Moving = false;
-            CharacterView.OnAnimation(AnimationState.NormalAttack);
-        }
-        else 
-        {
-            Moving = true;
+            CharacterEvent.Die();
         }
     }
-
 
     public void TakeDamage(int damage)
     {
         CharacterModel.CurrentHealth -= damage;
-        CharacterView.ShowDamagePopUp(damage);
+        CharacterView.OnDamagePopUp(damage);
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
         if (CharacterModel.CurrentHealth <= 0)
         {
@@ -110,17 +79,22 @@ public class CharacterController : BaseController,IController
         }
     }
 
-    public void Heal(int healthAmount)
+    protected virtual void Heal(int healthAmount)
     {
         CharacterModel.CurrentHealth += healthAmount;
-        CharacterView.ShowHealPopUp(healthAmount);
+        CharacterView.OnHealPopUp(healthAmount);
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
     }
 
-    public void Die()
+    protected virtual void Die()
     {
         CharacterView.OnAnimation(AnimationState.Die);
         EventUnRegister();
+    }
+
+    private int GetHealth()
+    {
+        return CharacterModel.CurrentHealth;
     }
     
 }

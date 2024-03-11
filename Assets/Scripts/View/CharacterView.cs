@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,9 @@ public abstract class CharacterView : BaseView, IView
     [Header("UI")]
     public GameObject popupDamage;
     public GameObject popupHealth;
-    public Slider healthBarSlider;
+    public Slider healthBar;
+    public Slider expBar;
+    public TextMeshProUGUI txtLevel;
     public Canvas characterUI;
     
     [Header("Skill UI")]
@@ -26,32 +29,46 @@ public abstract class CharacterView : BaseView, IView
         
         EventRegister();
     }
-
     public void EventRegister()
     {
-    }
-    public void OnUpdate()
-    {
+        
     }
 
     #region UI Handle
     
-    public void ShowDamagePopUp(float damage)
+    // Popup
+    public void OnDamagePopUp(int damage)
     {
-        GameObject textDamage = Instantiate(popupDamage,new Vector2(gameObject.transform.position.x + Random.Range(-0.1f,0.2f) ,gameObject.transform.position.y + Random.Range(1.4f,1.7f)),Quaternion.identity); 
-        textDamage.GetComponent<TextMesh>().text = " " + damage.ToString();
+        ShowPopup(damage, popupDamage);
     }
     
-    public void ShowHealPopUp(float damage)
+    public void OnHealPopUp(int damage)
+    {
+        ShowPopup(damage, popupHealth);
+    }
+    private void ShowPopup(int value, GameObject popup)
     {
         GameObject textDamage = Instantiate(popupHealth,new Vector2(gameObject.transform.position.x + Random.Range(-0.1f,0.2f) ,gameObject.transform.position.y + Random.Range(1.4f,1.7f)),Quaternion.identity); 
-        textDamage.GetComponent<TextMesh>().text = " " + damage.ToString();
+        textDamage.GetComponent<TextMesh>().text = " " + value.ToString();
     }
-    
-    public void OnHealthChange(float currentHealth)
+    // Slider
+    public void OnExpChange(int exp)
     {
-        float currentValue = Mathf.SmoothDamp(healthBarSlider.value,currentHealth, ref _currentVelocity, 20*Time.deltaTime); //  Smooth Slider
-        healthBarSlider.value = currentValue;
+        SetUIBar(exp, expBar);
+    }
+    public void OnHealthChange(int health)
+    {
+        SetUIBar(health, healthBar);
+    }
+    private void SetUIBar(int value, Slider slider)
+    {
+        float currentValue = Mathf.SmoothDamp(healthBar.value,value, ref _currentVelocity, 20*Time.deltaTime); //  Smooth Slider
+        slider.value = currentValue;
+    }
+    // Text
+    public void OnLevelChange(int level)
+    {
+        txtLevel.text = "LV " + level;
     }
     #endregion
 

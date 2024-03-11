@@ -15,6 +15,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3e77478443484c95a112286c4b291a591cba00/f8/94706913/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65b1059e417f421cbbd6f2d2815be1d834400/58/2937585e/AnimationState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Enemy/Globin Axe/GlobinAxeView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Hero/HeroController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnumClass.cs" root0="FORCE_HIGHLIGHTING" />
@@ -113,7 +116,8 @@
       <workItem from="1709911339747" duration="5519000" />
       <workItem from="1709944312613" duration="26806000" />
       <workItem from="1710052395449" duration="8051000" />
-      <workItem from="1710085388432" duration="2378000" />
+      <workItem from="1710085388432" duration="2496000" />
+      <workItem from="1710117200258" duration="11740000" />
     </task>
     <servers />
   </component>

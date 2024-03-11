@@ -7,19 +7,20 @@ using Interface;
 public class CharacterManager : Singleton<CharacterManager>
 {
     private Dictionary<CharacterType, Dictionary<CharacterName, GameObject>> _charactersDictionary;
-    private CharacterFactory _characterFactory;
     private Dictionary<CharacterName,IController> _controllersDictionary;
+    
+    private CharacterFactory _characterFactory;
     private IController _characterController;
 
     public void Initialize()
     {
         _controllersDictionary = new Dictionary<CharacterName, IController>();
         _charactersDictionary = new Dictionary<CharacterType, Dictionary<CharacterName, GameObject>>();
+        _characterFactory = new CharacterFactory();
     }
 
     public void CreateCharacter()
     {
-        _characterFactory = new CharacterFactory();
         _characterFactory.Create(CharacterType.Hero,CharacterName.CatBoxer);
     }
     public void Handle()
@@ -51,4 +52,6 @@ public class CharacterManager : Singleton<CharacterManager>
             controller.Value.Handle();
         }
     }
+    
+    
 }

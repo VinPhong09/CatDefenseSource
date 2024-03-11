@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseSkill : MonoBehaviour
 {
-    public SkillData SkillDataSo;
+    public SkillData skillDataSO;
 
     public void Initialize()
     {
@@ -12,7 +12,7 @@ public class BaseSkill : MonoBehaviour
     }
     public void SetDamage(int Damage)
     {
-        SkillDataSo.DamagePercentage += Damage;
+        skillDataSO.DamagePercentage += Damage;
     }
 
 }

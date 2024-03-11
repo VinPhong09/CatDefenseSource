@@ -44,8 +44,9 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     public void CreateObject(CharacterType characterType, CharacterName characterName,CharacterModel characterModel,
         IController characterController)
     {
+        var parent = CharacterManager.Instance.gameObject.transform;
         var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterName.ToString());
-        var gameObject = GameObject.Instantiate(prefab);
+        var gameObject = GameObject.Instantiate(prefab, parent);
         var characterEvent = gameObject.AddComponent<CharacterEvent>();
         var Model = characterModel;
         var View = gameObject.GetComponent<IView>();
