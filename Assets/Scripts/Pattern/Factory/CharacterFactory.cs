@@ -22,18 +22,29 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     }
     private void CreateHeroByName(CharacterName characterName)
     {
+        var position = SpawnManager.Instance.HeroSpawnPoint.transform;
+
         CharacterType characterHero = CharacterType.Hero;
         switch (characterName)
         {
             case CharacterName.CatBoxer:
-                CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController());
+                CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController(),position);
                 break;
             
         }
     }
     private void CreateEnemyByName(CharacterName characterName)
     {
-        throw new System.NotImplementedException();
+        var position = SpawnManager.Instance.EnemySpawnPoint.transform;
+
+        CharacterType characterEnemy = CharacterType.Enemy;
+        switch (characterName)
+        {
+            case CharacterName.GlobinAxe:
+                CreateObject(characterEnemy, characterName,new GlobinAxeModel(),new GlobinAxeController(),position);
+                break;
+            
+        }
     }
     
     private void CreatePetByName(CharacterName characterName)
@@ -42,18 +53,18 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     }
 
     public void CreateObject(CharacterType characterType, CharacterName characterName,CharacterModel characterModel,
-        IController characterController)
+        IController characterController, Transform position)
     {
         var parent = CharacterManager.Instance.gameObject.transform;
-        var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterName.ToString());
-        var gameObject = GameObject.Instantiate(prefab, parent);
+        var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterType.ToString()+"/"+characterName.ToString());
+        var gameObject = GameObject.Instantiate(prefab, position, parent);
         var characterEvent = gameObject.AddComponent<CharacterEvent>();
-        var Model = characterModel;
-        var View = gameObject.GetComponent<IView>();
-        var Controller = characterController;
-        Controller.SetData(Model,View,characterEvent);
-        Controller.Initialize();
-        CharacterManager.Instance.AddController(characterName, Controller);
+        var model = characterModel;
+        var view = gameObject.GetComponent<IView>();
+        var controller = characterController;
+        controller.SetData(model,view,characterEvent);
+        controller.Initialize();
+        CharacterManager.Instance.AddController(characterName, controller);
         CharacterManager.Instance.AddCharacter(characterType, characterName, gameObject);
     }
 }

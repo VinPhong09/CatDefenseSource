@@ -21,6 +21,8 @@ public class CharacterManager : Singleton<CharacterManager>
 
     public void CreateCharacter()
     {
+        _characterFactory.Create(CharacterType.Enemy,CharacterName.GlobinAxe);
+
         _characterFactory.Create(CharacterType.Hero,CharacterName.CatBoxer);
     }
     public void Handle()

@@ -8,7 +8,7 @@ public class CatBoxerModel : CharacterModel
     {
         MoveSpeed = 2;
         AttackSpeed = 0.5f;
-        AttackRange = 1f;
+        AttackRange = 2f;
         //set BeginLevel
         Level = 1;
         CurrentExp = 0;
@@ -25,6 +25,8 @@ public class CatBoxerModel : CharacterModel
         
         //Set CritRate
         CritRate = 0;
+
+        IsDead = false;
     }
     
 }

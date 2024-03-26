@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3917924991464048224}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.36, y: -2, z: 9.999855}
   m_LocalScale: {x: 0.4, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
@@ -564,15 +564,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupDamage: {fileID: 3700420064744925188, guid: 760154165457219468bc14cce0cfa8d2, type: 3}
   popupHealth: {fileID: 3700420064744925188, guid: 455867829e7024d4db6eea032b66013f, type: 3}
-  healthBarSlider: {fileID: 3726342062476537494}
+  healthBar: {fileID: 3726342062476537494}
+  expBar: {fileID: 3888084414978339645}
+  txtLevel: {fileID: 2466276806826193927}
   characterUI: {fileID: 6817663570171514242}
   skills:
-  - _Name: 
-    _Image: {fileID: 0}
-    _Description: 
-    _DamagePercentage: 0
-    _Level: 
-    _isUnlock: 0
+  - {fileID: 0}
 --- !u!1 &4152062412622565295
 GameObject:
   m_ObjectHideFlags: 0

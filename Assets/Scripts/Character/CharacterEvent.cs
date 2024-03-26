@@ -13,6 +13,7 @@ public class CharacterEvent: MonoBehaviour, IHealth, IEvent
    public event Action OnDie;
 
    public event Func<int> OnGetHealth; 
+   
    public void TakeDamage(int damage)
    {
       OnTakeDamage?.Invoke(damage);

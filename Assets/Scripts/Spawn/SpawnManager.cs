@@ -4,22 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Spawn : MonoBehaviour
+public class SpawnManager : Singleton<SpawnManager>
 {
-    [Header("Player GameObject")]
+    public GameObject HeroSpawnPoint;
+
+    public GameObject EnemySpawnPoint;
+    /*[Header("Player GameObject")]
     [SerializeField] protected GameObject _BoxerGameobject;
     [SerializeField] protected GameObject _FoloGameobject;
     [SerializeField] protected GameObject _MuradGameobject;
     [SerializeField] protected GameObject _VampireGameobject;
 
-    
+
 
     [SerializeField] protected List<GameObject> _EnemyPrefabs;
 
     [SerializeField] protected Text _TextLevelGame;
     public GameObject _EnemySpawnPosition;
-    
-    
+
+
 
     List<GameObject> _EnemiesSpawnerList;
 
@@ -28,7 +31,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] protected float _NexttimeSpawn = 5f;
 
 
-    //Button 
+    //Button
     [SerializeField] protected GameObject _AttackBtn;
 
     int _countEnemy = 0;
@@ -36,7 +39,7 @@ public class Spawn : MonoBehaviour
     int _EnemyLevel = 1;
     float _DamageLv = 0;
     float _currenttime = 0;
-    
+
     float _CountTimeRebornBoxer;
     float _CountTimeRebornFolo;
     float _CountTimeRebornMurad;
@@ -73,7 +76,7 @@ public class Spawn : MonoBehaviour
         if(_currenttime < Time.time)
         {
             _currenttime = Time.time + _NexttimeSpawn;
-            _countEnemy++;   
+            _countEnemy++;
             GameObject EnemyGO = Instantiate(_EnemyPrefabs[0],new Vector2(_EnemySpawnPosition.transform.position.x,_EnemySpawnPosition.transform.position.y + Random.Range(0f,-3f)) , Quaternion.identity) as GameObject;
             EnemyGO.GetComponent<EnemyHealth>().SetHealthEnemy(_HealthLV);
             EnemyGO.GetComponentInChildren<HitBoxE>().setDamageEnemy((int)_DamageLv);
@@ -100,7 +103,7 @@ public class Spawn : MonoBehaviour
             _HealthLV += 50;
             _DamageLv +=5;
         }
-        
+
     }
     public List<GameObject> GetEnemySpawnerList()
     {
@@ -156,6 +159,5 @@ public class Spawn : MonoBehaviour
 
         if(!_VampireGameobject.activeInHierarchy)
             DelaytimeRebornVampire();
-    }
-#endregion
+    }*/
 }

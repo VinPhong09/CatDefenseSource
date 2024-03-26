@@ -5,12 +5,6 @@ using UnityEngine;
 
 public class HeroController : CharacterController,  IController
 {
-    public override void Handle()
-    {
-        base.Handle();
-        DetectEnemies();
-    }
-
     public override void Move()
     {
         var position = CharacterView.GetPosition();
@@ -49,13 +43,14 @@ public class HeroController : CharacterController,  IController
             Moving = true;
         }
     }
-
+    
     protected override void Heal(int healthAmount)
     {
         base.Heal(healthAmount);
     }
     protected override void Die()
     {
-        base.Die();
+        CharacterModel.IsDead = true;
+        CharacterView.OnAnimation(AnimationState.Die);
     }
 }

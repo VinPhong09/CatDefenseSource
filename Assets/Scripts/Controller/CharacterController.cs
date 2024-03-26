@@ -14,7 +14,7 @@ public abstract class CharacterController : BaseController, IController
     protected GameObject Target; 
     protected bool Moving;
 
-    public void SetData(IModel characterModel, IView characterView,
+    public virtual void SetData(IModel characterModel, IView characterView,
         CharacterEvent characterEvent)
     {
         this.CharacterModel = (CharacterModel)characterModel;
@@ -22,10 +22,11 @@ public abstract class CharacterController : BaseController, IController
         this.CharacterEvent = characterEvent;
     }
 
-    public void Initialize()
+    public virtual void Initialize()
     {
-        CharacterView.Initialize();
         EventRegister();
+        
+        CharacterView.Initialize();
 
         Moving = true;
         Target = null;
@@ -33,6 +34,8 @@ public abstract class CharacterController : BaseController, IController
 
     public virtual void Handle()
     {
+        if(CharacterModel.IsDead)
+            return;
         DetectTarget();
     }
 
@@ -56,6 +59,7 @@ public abstract class CharacterController : BaseController, IController
 
 
     public abstract void Move();
+    protected abstract void Die();
     public abstract void DetectTarget();
     
     public virtual void Attack() // Attack when Event in Animation is trigger
@@ -73,10 +77,6 @@ public abstract class CharacterController : BaseController, IController
         CharacterModel.CurrentHealth -= damage;
         CharacterView.OnDamagePopUp(damage);
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
-        if (CharacterModel.CurrentHealth <= 0)
-        {
-            Die();
-        }
     }
 
     protected virtual void Heal(int healthAmount)
@@ -86,11 +86,6 @@ public abstract class CharacterController : BaseController, IController
         CharacterView.OnHealthChange(CharacterModel.CurrentHealth);
     }
 
-    protected virtual void Die()
-    {
-        CharacterView.OnAnimation(AnimationState.Die);
-        EventUnRegister();
-    }
 
     private int GetHealth()
     {

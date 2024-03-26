@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyModel : MonoBehaviour
+public class EnemyModel : CharacterModel, IModel
 {
-    // Start is called before the first frame update
-    void Start()
+    public EnemyModel()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        MoveSpeed = 0;
+        MaxHealth = 100;
+        CurrentHealth = MaxHealth;
+        DamageMin = 2;
     }
 }

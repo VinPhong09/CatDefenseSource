@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,12 +22,12 @@ public abstract class CharacterView : BaseView, IView
     protected Animator CharacterAnimation;
     
     private float _currentVelocity = 0;
-    
+    private float _smootTimeUIBar = 2;
     public void Initialize()
     {
         CharacterAnimation = gameObject.GetComponent<Animator>();
         CharacterEvent = gameObject.GetComponent<CharacterEvent>();
-        
+        InitValueUIBar();
         EventRegister();
     }
     public void EventRegister()
@@ -48,22 +49,28 @@ public abstract class CharacterView : BaseView, IView
     }
     private void ShowPopup(int value, GameObject popup)
     {
-        GameObject textDamage = Instantiate(popupHealth,new Vector2(gameObject.transform.position.x + Random.Range(-0.1f,0.2f) ,gameObject.transform.position.y + Random.Range(1.4f,1.7f)),Quaternion.identity); 
+        GameObject textDamage = Instantiate(popup,new Vector2(gameObject.transform.position.x + Random.Range(-0.1f,0.2f) ,gameObject.transform.position.y + Random.Range(1.4f,1.7f)),Quaternion.identity); 
         textDamage.GetComponent<TextMesh>().text = " " + value.ToString();
     }
     // Slider
+    public void InitValueUIBar()
+    {
+        var health = CharacterEvent.GetHealth();
+        healthBar.value = health;
+        healthBar.maxValue = health;
+        Debug.Log("value: "+ healthBar.value + " MaxValue: "+ healthBar.maxValue);
+    }
     public void OnExpChange(int exp)
     {
-        SetUIBar(exp, expBar);
+        SetValueUIBar(exp, expBar);
     }
     public void OnHealthChange(int health)
     {
-        SetUIBar(health, healthBar);
+        SetValueUIBar(health, healthBar);
     }
-    private void SetUIBar(int value, Slider slider)
+    private void SetValueUIBar(int value, Slider slider)
     {
-        float currentValue = Mathf.SmoothDamp(healthBar.value,value, ref _currentVelocity, 20*Time.deltaTime); //  Smooth Slider
-        slider.value = currentValue;
+        slider.DOValue(value, _smootTimeUIBar, false);
     }
     // Text
     public void OnLevelChange(int level)
@@ -101,7 +108,6 @@ public abstract class CharacterView : BaseView, IView
     {
         CharacterEvent.Attack();
     }
-
     #endregion
 
     #region Transform Handle

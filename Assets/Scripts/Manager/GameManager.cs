@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    // Start is called before the first frame update
     public CharacterManager characterManager;
     AudioSource _audio;
     
@@ -14,6 +13,7 @@ public class GameManager : Singleton<GameManager>
         characterManager = GetComponentInChildren<CharacterManager>();
         _audio = GetComponent<AudioSource>();
         _audio.Play();
+        DontDestroyOnLoad(this);
     }
 
      private void Start()

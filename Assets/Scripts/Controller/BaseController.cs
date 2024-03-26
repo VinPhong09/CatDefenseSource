@@ -37,4 +37,9 @@ public class BaseController: IController
     {
         throw new System.NotImplementedException();
     }
+
+    public void DetectTarget()
+    {
+        throw new System.NotImplementedException();
+    }
 }
