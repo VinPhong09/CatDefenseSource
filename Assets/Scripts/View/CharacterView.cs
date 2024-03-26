@@ -56,9 +56,8 @@ public abstract class CharacterView : BaseView, IView
     public void InitValueUIBar()
     {
         var health = CharacterEvent.GetHealth();
-        healthBar.value = health;
         healthBar.maxValue = health;
-        Debug.Log("value: "+ healthBar.value + " MaxValue: "+ healthBar.maxValue);
+        healthBar.value = health;
     }
     public void OnExpChange(int exp)
     {

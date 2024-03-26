@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class CatBoxerView : CharacterView, IView
 {
-    public void Initialize()
-    {
-        base.Initialize();
-    }
     public override void OnAnimation(AnimationState animationState)
     {
         base.OnAnimation(animationState);

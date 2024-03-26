@@ -5,4 +5,5 @@ using UnityEngine;
 
 public class CatBoxerController : HeroController, IController
 {
+   
 }

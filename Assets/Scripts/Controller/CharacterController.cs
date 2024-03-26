@@ -68,7 +68,8 @@ public abstract class CharacterController : BaseController, IController
         health.TakeDamage(CharacterModel.DamageMin);
         if (health.GetHealth() <= 0)
         {
-            CharacterEvent.Die();
+            health.Die();
+            Target = null;
         }
     }
 

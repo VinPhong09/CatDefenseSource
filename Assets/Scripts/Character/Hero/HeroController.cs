@@ -50,6 +50,7 @@ public class HeroController : CharacterController,  IController
     }
     protected override void Die()
     {
+        Debug.Log("Hero Die");
         CharacterModel.IsDead = true;
         CharacterView.OnAnimation(AnimationState.Die);
     }

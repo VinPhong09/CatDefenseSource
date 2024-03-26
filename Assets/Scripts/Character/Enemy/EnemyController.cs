@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class EnemyController : CharacterController, IController
 {
+    public void SetData(IModel characterModel, IView characterView,
+        CharacterEvent characterEvent)
+    {
+        base.SetData(characterModel, characterView, characterEvent);
+    }
     public virtual void Initialize()
     {
         base.Initialize();
@@ -35,6 +40,7 @@ public class EnemyController : CharacterController, IController
     {
         CharacterModel.IsDead = true;
         CharacterView.OnAnimation(AnimationState.Die);
+        CharacterView.gameObject.SetActive(false);
     }
     
 }
