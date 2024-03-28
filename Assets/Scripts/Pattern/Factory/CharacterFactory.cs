@@ -30,7 +30,12 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
             case CharacterName.CatBoxer:
                 CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController(),position);
                 break;
-            
+            case CharacterName.CatFolotilo:
+                CreateObject(characterHero, characterName, new CatFolotiloModel(), new CatFolotiloController(), position);
+                break;
+            case CharacterName.CatVampire:
+                CreateObject(characterHero,characterName,new CatVampireModel(), new CatVampireController(),position);
+                break;
         }
     }
     private void CreateEnemyByName(CharacterName characterName)

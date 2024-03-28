@@ -5,12 +5,10 @@ using UnityEngine.UI;
 
 public class CharacterEffect : MonoBehaviour
 {
-    CharHealth _CharHealth;
     Rigidbody2D _RG;
     void Start()
     {
         _RG = gameObject.GetComponent<Rigidbody2D>();
-        _CharHealth = gameObject.GetComponent<CharHealth>();
         //
     }
 

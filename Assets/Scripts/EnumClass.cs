@@ -18,6 +18,9 @@ public enum CharacterName
 {
     //Hero
     CatBoxer,
+    CatFolotilo,
+    CatVampire,
+    
     //Enemy
     GlobinAxe,
 }

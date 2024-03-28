@@ -5,16 +5,9 @@ using UnityEngine;
 
 public class EnemyController : CharacterController, IController
 {
-    public void SetData(IModel characterModel, IView characterView,
-        CharacterEvent characterEvent)
-    {
-        base.SetData(characterModel, characterView, characterEvent);
-    }
     public virtual void Initialize()
     {
         base.Initialize();
-        CharacterView.Initialize();
-
         Target = GameObject.FindGameObjectWithTag("Tower");
     }
     public override void Move()

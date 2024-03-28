@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 7242899037897779665}
   - component: {fileID: 1501247643714663628}
   - component: {fileID: 5794921481304927583}
-  - component: {fileID: 5953349063882306213}
   - component: {fileID: 9074373325877457793}
   - component: {fileID: 2186367954863934887}
   m_Layer: 6
@@ -268,52 +267,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.249191, y: -0.036225915}
   m_Size: {x: 2.4803398, y: 2.019294}
   m_Direction: 0
---- !u!61 &5953349063882306213
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3491913449998326835}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.06450224, y: -0.009802073}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.210317, y: 2.03}
-    newSize: {x: 4.210317, y: 1.83}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.6333156, y: 1.8496044}
-  m_EdgeRadius: 0
 --- !u!82 &9074373325877457793
 AudioSource:
   m_ObjectHideFlags: 0
@@ -425,10 +378,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupDamage: {fileID: 3700420064744925188, guid: 760154165457219468bc14cce0cfa8d2, type: 3}
   popupHealth: {fileID: 3700420064744925188, guid: 455867829e7024d4db6eea032b66013f, type: 3}
-  healthBar: {fileID: 844349591746474236}
-  expBar: {fileID: 0}
   txtLevel: {fileID: 0}
   characterUI: {fileID: 2353851456530613939}
+  sliders:
+  - sliderType: 0
+    slider: {fileID: 844349591746474236}
   skills: []
 --- !u!1 &4153305088914785527
 GameObject:

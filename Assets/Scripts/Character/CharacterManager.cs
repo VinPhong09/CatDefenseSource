@@ -23,7 +23,7 @@ public class CharacterManager : Singleton<CharacterManager>
     {
         _characterFactory.Create(CharacterType.Enemy,CharacterName.GlobinAxe);
 
-        _characterFactory.Create(CharacterType.Hero,CharacterName.CatBoxer);
+        _characterFactory.Create(CharacterType.Hero,CharacterName.CatVampire);
     }
     public void Handle()
     {
