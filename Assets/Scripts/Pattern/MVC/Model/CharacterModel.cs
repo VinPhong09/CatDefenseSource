@@ -18,6 +18,7 @@ public class CharacterModel : BaseModel, IModel
     public int DamageMin { get; set; }
     public int DamageMax { get; set; }
     
+    public float LifeSteal { get; set; }
     public int MaxHealth { get; set; }
     public int CurrentHealth { get; set; }
 

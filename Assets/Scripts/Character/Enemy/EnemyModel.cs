@@ -6,7 +6,7 @@ public class EnemyModel : CharacterModel, IModel
 {
     public EnemyModel()
     {
-        MoveSpeed = 0;
+        MoveSpeed = 2;
         MaxHealth = 100;
         CurrentHealth = MaxHealth;
         DamageMin = 2;

@@ -571,8 +571,10 @@ MonoBehaviour:
     slider: {fileID: 3726342062476537494}
   - sliderType: 1
     slider: {fileID: 3888084414978339645}
-  skills:
-  - {fileID: 0}
+  Skills:
+  - {fileID: 11400000, guid: b55e2981230b3054f9b84b73ed41c624, type: 2}
+  - {fileID: 11400000, guid: 810e6dc605398d24f9ae9f1945fc0731, type: 2}
+  - {fileID: 11400000, guid: 50594ee6f7b607e4989eeffa62056fac, type: 2}
 --- !u!1 &4152062412622565295
 GameObject:
   m_ObjectHideFlags: 0

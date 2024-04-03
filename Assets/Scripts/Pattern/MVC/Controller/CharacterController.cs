@@ -90,5 +90,7 @@ public abstract class CharacterController : BaseController, IController
     {
         return CharacterModel.CurrentHealth;
     }
-    
+
+    public CharacterView GetCharacterView() => this.CharacterView;
+    public CharacterModel GetCharacterModel() => this.CharacterModel;
 }

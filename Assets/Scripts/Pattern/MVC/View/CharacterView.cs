@@ -15,7 +15,7 @@ public abstract class CharacterView : BaseView, IView
     public List<CharacterSlider> sliders;
     
     [Header("Skill UI")]
-    public List<Skill> skills;
+    public List<SkillData> Skills;
 
     protected CharacterEvent CharacterEvent;
     protected Animator CharacterAnimation;
@@ -160,5 +160,7 @@ public abstract class CharacterView : BaseView, IView
         characterUI.transform.localScale = scaleUI;
     }
     #endregion
+
+    public List<SkillData> GetSkillList() => Skills;
     
 }

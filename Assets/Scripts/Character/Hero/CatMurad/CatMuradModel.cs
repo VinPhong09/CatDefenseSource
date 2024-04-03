@@ -16,15 +16,15 @@ public class CatMuradModel : CharacterModel
         
         //Set Begin Damage
         DamageLevel = 0;
-        DamageMax = 12;
-        DamageMin = 8;
+        DamageMax = 20;
+        DamageMin = 14;
         
         //Set Begin Health
-        MaxHealth = 200;
+        MaxHealth = 100;
         CurrentHealth = MaxHealth;
         
         //Set CritRate
-        CritRate = 0;
+        CritRate = 0.2f;
 
         IsDead = false;
     }

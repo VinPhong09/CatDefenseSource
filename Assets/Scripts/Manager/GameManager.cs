@@ -6,7 +6,8 @@ public class GameManager : Singleton<GameManager>
 {
     public CharacterManager characterManager;
     AudioSource _audio;
-    
+
+    private bool isInitCharacter = true;
     protected override void Awake()
     {
         base.Awake();
@@ -18,18 +19,22 @@ public class GameManager : Singleton<GameManager>
 
      private void Start()
      {
+         characterManager.Initialize();
          QualitySettings.vSyncCount = 0;
          Application.targetFrameRate = 60;
-        
-         characterManager.Initialize();
-         characterManager.CreateCharacter();
-        
      }
 
+     public void initCharacter()
+     {
+         
+         characterManager.CreateCharacter();
+         isInitCharacter = true;
+     }
     // Update is called once per frame
     void Update()
     {
-        characterManager.Handle();
+        if(isInitCharacter)
+            characterManager.Handle();
     }
 
     

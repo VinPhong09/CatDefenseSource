@@ -20,10 +20,9 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
                 break;
         }
     }
-    private void CreateHeroByName(CharacterName characterName)
+    public void CreateHeroByName(CharacterName characterName)
     {
         var position = SpawnManager.Instance.HeroSpawnPoint.transform;
-
         CharacterType characterHero = CharacterType.Hero;
         switch (characterName)
         {
@@ -34,7 +33,10 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
                 CreateObject(characterHero, characterName, new CatFolotiloModel(), new CatFolotiloController(), position);
                 break;
             case CharacterName.CatVampire:
-                CreateObject(characterHero,characterName,new CatVampireModel(), new CatVampireController(),position);
+                CreateObject(characterHero, characterName,new CatVampireModel(), new CatVampireController(),position);
+                break;
+            case CharacterName.CatMurad:
+                CreateObject(characterHero, characterName,new CatMuradModel(), new CatMuradController(),position);
                 break;
         }
     }
@@ -63,13 +65,14 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
         var parent = CharacterManager.Instance.gameObject.transform;
         var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterType.ToString()+"/"+characterName.ToString());
         var gameObject = GameObject.Instantiate(prefab, position, parent);
+        gameObject.name = characterName.ToString();
         var characterEvent = gameObject.AddComponent<CharacterEvent>();
         var model = characterModel;
         var view = gameObject.GetComponent<IView>();
         var controller = characterController;
         controller.SetData(model,view,characterEvent);
         controller.Initialize();
-        CharacterManager.Instance.AddController(characterName, controller);
-        CharacterManager.Instance.AddCharacter(characterType, characterName, gameObject);
+        CharacterManager.Instance.AddController(characterType, characterName, controller);
+        CharacterManager.Instance.AddCharacterGameObject(characterType, characterName, gameObject);
     }
 }

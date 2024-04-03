@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interface;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,63 +10,40 @@ public class UICharacterController : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] protected List<GameObject> _Charpreview;
 
-    [SerializeField] protected List<GameObject> _CharPage;
+    public HeroStatManager HeroStatManager;
+   
 
+    private List<GameObject> _herosGameObject;
+    private List<IController> _heroControllers;
+    public void Init()
+    {
+        _herosGameObject = CharacterManager.Instance.GetHeroGameObjectList();
+        _heroControllers = CharacterManager.Instance.GetHeroControllerList();
+        HeroStatManager.SetData(_heroControllers[0]);
+    }
 
-    
     [Header("ReActive GameObject")]
     [SerializeField] protected GameObject _HeroBtn;
-    int i = 0;
-
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    int i = 1;
     
    public void nextCharacter()
    {
         i++;
-        if(i <= _Charpreview.Count -1)
+        if (i > _heroControllers.Count-1)
         {
-            _Charpreview[i].gameObject.SetActive(true);
-            _Charpreview[i-1].gameObject.SetActive(false);
-            //PageChange
-            _CharPage[i].gameObject.SetActive(true);
-            _CharPage[i-1].gameObject.SetActive(false);
-        }else if(i >= _Charpreview.Count - 1)
-        {
-            _Charpreview[i-1].gameObject.SetActive(false);
-            _CharPage[i-1].gameObject.SetActive(false);
             i = 0;
-            //pageChanges
-            _Charpreview[i].gameObject.SetActive(true);
-            _CharPage[i].gameObject.SetActive(true);
         }
-    }
+        HeroStatManager.SetData(_heroControllers[i]);
+   }
 
    public void previousCharacter()
    {
         i--;
-        if(i>=0)
+        if (i < 0)
         {
-            _Charpreview[i].gameObject.SetActive(true);
-            _Charpreview[i+1].gameObject.SetActive(false);
-            _CharPage[i].gameObject.SetActive(true);
-            _CharPage[i+1].gameObject.SetActive(false);
-        }else if(i < 0)
-        {
-            _CharPage[i+1].gameObject.SetActive(false);
-            _Charpreview[i+1].gameObject.SetActive(false);
-            i = 3;
-            _Charpreview[i].gameObject.SetActive(true);
-            _CharPage[i].gameObject.SetActive(true);
+            i = _heroControllers.Count-1;
         }
+        HeroStatManager.SetData(_heroControllers[i]);
    }
    public void QuitHerosTab(GameObject gameObject1)
    {
