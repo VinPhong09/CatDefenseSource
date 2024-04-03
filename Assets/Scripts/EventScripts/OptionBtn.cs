@@ -36,6 +36,7 @@ public class OptionBtn : MonoBehaviour
     public void OpenHerotab(GameObject _Gameobject)
     {
         _Herotabs.gameObject.SetActive(true);
+        _Herotabs.GetComponent<UICharacterController>().Init();
         _Gameobject.SetActive(false);
         _ShopBtn.GetComponent<Button>().interactable = false;
         _SettingBtn.GetComponent<Button>().interactable = false;
@@ -50,7 +51,7 @@ public class OptionBtn : MonoBehaviour
     }
     public void StartLevel(GameObject _Gameobject)
     {
-        _StartLevel.SetActive(true);
+        GameManager.Instance.initCharacter();
         _Gameobject.SetActive(false);
         _HeroBtn.GetComponent<Button>().interactable = true;
         _ShopBtn.GetComponent<Button>().interactable = true;

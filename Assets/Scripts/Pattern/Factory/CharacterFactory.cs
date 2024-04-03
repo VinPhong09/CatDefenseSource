@@ -20,20 +20,38 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
                 break;
         }
     }
-    private void CreateHeroByName(CharacterName characterName)
+    public void CreateHeroByName(CharacterName characterName)
     {
+        var position = SpawnManager.Instance.HeroSpawnPoint.transform;
         CharacterType characterHero = CharacterType.Hero;
         switch (characterName)
         {
             case CharacterName.CatBoxer:
-                CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController());
+                CreateObject(characterHero, characterName,new CatBoxerModel(),new CatBoxerController(),position);
                 break;
-            
+            case CharacterName.CatFolotilo:
+                CreateObject(characterHero, characterName, new CatFolotiloModel(), new CatFolotiloController(), position);
+                break;
+            case CharacterName.CatVampire:
+                CreateObject(characterHero, characterName,new CatVampireModel(), new CatVampireController(),position);
+                break;
+            case CharacterName.CatMurad:
+                CreateObject(characterHero, characterName,new CatMuradModel(), new CatMuradController(),position);
+                break;
         }
     }
     private void CreateEnemyByName(CharacterName characterName)
     {
-        throw new System.NotImplementedException();
+        var position = SpawnManager.Instance.EnemySpawnPoint.transform;
+
+        CharacterType characterEnemy = CharacterType.Enemy;
+        switch (characterName)
+        {
+            case CharacterName.GlobinAxe:
+                CreateObject(characterEnemy, characterName,new GlobinAxeModel(),new GlobinAxeController(),position);
+                break;
+            
+        }
     }
     
     private void CreatePetByName(CharacterName characterName)
@@ -42,17 +60,19 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     }
 
     public void CreateObject(CharacterType characterType, CharacterName characterName,CharacterModel characterModel,
-        IController characterController)
+        IController characterController, Transform position)
     {
-        var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterName.ToString());
-        var gameObject = GameObject.Instantiate(prefab);
+        var parent = CharacterManager.Instance.gameObject.transform;
+        var prefab = Resources.Load<GameObject>("Prefabs/Character/"+characterType.ToString()+"/"+characterName.ToString());
+        var gameObject = GameObject.Instantiate(prefab, position, parent);
+        gameObject.name = characterName.ToString();
         var characterEvent = gameObject.AddComponent<CharacterEvent>();
-        var Model = characterModel;
-        var View = gameObject.GetComponent<IView>();
-        var Controller = characterController;
-        Controller.SetData(Model,View,characterEvent);
-        Controller.Initialize();
-        CharacterManager.Instance.AddController(characterName, Controller);
-        CharacterManager.Instance.AddCharacter(characterType, characterName, gameObject);
+        var model = characterModel;
+        var view = gameObject.GetComponent<IView>();
+        var controller = characterController;
+        controller.SetData(model,view,characterEvent);
+        controller.Initialize();
+        CharacterManager.Instance.AddController(characterType, characterName, controller);
+        CharacterManager.Instance.AddCharacterGameObject(characterType, characterName, gameObject);
     }
 }

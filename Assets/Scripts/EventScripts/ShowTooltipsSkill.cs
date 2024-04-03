@@ -17,16 +17,5 @@ public class ShowTooltipsSkill : MonoBehaviour
         
     }
 
-    private void OnMouseOver()
-    {
-        BoxShow.gameObject.SetActive(true);
-    }
-
-    /// <summary>
-    /// Called when the mouse is not any longer over the GUIElement or Collider.
-    /// </summary>
-    private void OnMouseExit()
-    {
-        BoxShow.gameObject.SetActive(false);
-    }
+    
 }

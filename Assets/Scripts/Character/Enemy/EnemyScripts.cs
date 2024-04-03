@@ -37,7 +37,7 @@ public class EnemyScripts : MonoBehaviour
     {
       if(!_isAttack)
       {
-         _RG.MovePosition(gameObject.transform.position - gameObject.transform.right *MoveSpeed * Time.fixedDeltaTime);
+         _RG.MovePosition(gameObject.transform.position - gameObject.transform.right * MoveSpeed * Time.fixedDeltaTime);
       }
       else
          return;
