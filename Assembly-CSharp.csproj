@@ -52,9 +52,12 @@
     <Compile Include="Assets\Scripts\UI\HeroItemUI.cs" />
     <Compile Include="Assets\Scripts\Pattern\Factory\CharacterFactory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\BuffDamageEffect.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\ShieldEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\HealthBarScripts.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\HeroStatManager.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Pooling\PoolManager.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\Resource.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\UI\Button\BuyHeroButton.cs" />
@@ -82,6 +85,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\Pattern\Singleton\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\AttackSpeedEffect.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatVampire\CatVampireController.cs" />
     <Compile Include="Assets\Scripts\Spawn\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Interface\ISkill.cs" />
@@ -96,8 +100,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\UI\BaseItemUI.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\EnemyScripts.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\CharacterEffect.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\ResourceName.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterSlider.cs" />
+    <Compile Include="Assets\Scripts\UI\Hero\HeroSelectionUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatHammer\HitBox.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatFolotilo\CatFolotiloController.cs" />
@@ -108,8 +114,10 @@
     <Compile Include="Assets\Scripts\Skill\BaseSkill.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\Globin Axe\GlobinAxeController.cs" />
     <Compile Include="Assets\Scripts\Tower\UpdateScript.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Strategy\IAttack.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\EventScripts\ShowTooltipsSkill.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\ICharacterEffect.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\HitBoxE.cs" />
     <Compile Include="Assets\Scripts\Pattern\MVC\View\CharacterView.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -120,7 +128,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatVampire\CatVampireModel.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\EnemyHealth.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterEffect.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatVampire\CatVampireView.cs" />
@@ -132,7 +139,6 @@
     <Compile Include="Assets\Scripts\UI\Dialog.cs" />
     <Compile Include="Assets\Scripts\Pattern\MVC\View\BaseView.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Scripts\Manager\PoolManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\EventScripts\UIManageScriptInGamePlay.cs" />
     <Compile Include="Assets\Scripts\Character\Hero\CatHammer\CatHammerScripts.cs" />
@@ -143,10 +149,14 @@
     <Compile Include="Assets\Scripts\Pattern\MVC\Controller\CharacterController.cs" />
     <Compile Include="Assets\Scripts\UI\Button\NewGameButton.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\Scripts\Interface\ICharacterEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\LifeStealEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Strategy\MeleeAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Strategy\RangeAttack.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Factory\PoolFactory.cs" />
+    <Compile Include="Assets\Scripts\Pattern\Decorator\FreezeEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Skill\SkillData.cs" />
     <Compile Include="Assets\Scripts\Interface\IEvent.cs" />
@@ -157,6 +167,7 @@
     <Compile Include="Assets\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterEvent.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\VinBehavior\EnumParser.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\EventScripts\GuidePage.cs" />
     <Compile Include="Assets\Scripts\EventScripts\SetFrameTarget.cs" />

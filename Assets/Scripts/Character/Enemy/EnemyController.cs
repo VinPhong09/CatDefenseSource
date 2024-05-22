@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Interface;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class EnemyController : CharacterController, IController
@@ -15,7 +16,7 @@ public class EnemyController : CharacterController, IController
         var position = CharacterView.GetPosition();
         if (Moving)
         {
-            position.x = Mathf.MoveTowards(position.x, Target.transform.position.x,
+            position.x = Mathf.MoveTowards(position.x, Target.transform.position.x + 2,
                 CharacterModel.MoveSpeed * Time.fixedDeltaTime);
             CharacterView.SetPosition(position);
             CharacterView.OnAnimation(AnimationState.Move);
@@ -33,7 +34,11 @@ public class EnemyController : CharacterController, IController
     {
         CharacterModel.IsDead = true;
         CharacterView.OnAnimation(AnimationState.Die);
+        ReturnToPool();
+    }
+
+    private void ReturnToPool()
+    {
         CharacterView.gameObject.SetActive(false);
     }
-    
 }

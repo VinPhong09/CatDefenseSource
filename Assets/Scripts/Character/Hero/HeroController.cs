@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class HeroController : CharacterController,  IController
 {
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+
     public override void Move()
     {
         var position = CharacterView.GetPosition();

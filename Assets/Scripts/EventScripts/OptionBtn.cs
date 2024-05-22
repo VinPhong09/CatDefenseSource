@@ -18,7 +18,9 @@ public class OptionBtn : MonoBehaviour
     [SerializeField] protected GameObject _SettingBtn;
 
     [SerializeField] protected GameObject _AudioBtn;
-    
+
+
+    public UIManageScriptInGamePlay UIManageScriptInGamePlay;
 
     void Start()
     {
@@ -48,10 +50,13 @@ public class OptionBtn : MonoBehaviour
         _SettingBtn.GetComponent<Button>().interactable = false;
         _Shop.gameObject.SetActive(true);
         _Gameobject.SetActive(false);
+        
+        //Test, Can delete and update for in the future.
+        UIManageScriptInGamePlay.OnOpenHeroShop();
     }
     public void StartLevel(GameObject _Gameobject)
     {
-        GameManager.Instance.initCharacter();
+        GameManager.Instance.StartGame();
         _Gameobject.SetActive(false);
         _HeroBtn.GetComponent<Button>().interactable = true;
         _ShopBtn.GetComponent<Button>().interactable = true;

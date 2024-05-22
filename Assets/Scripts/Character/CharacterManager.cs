@@ -6,16 +6,14 @@ using Interface;
 
 public class CharacterManager : Singleton<CharacterManager>
 {
-    private Dictionary<CharacterType, Dictionary<CharacterName, GameObject>> _charactersDictionary;
-    private Dictionary<CharacterType,Dictionary<CharacterName,IController>> _controllersDictionary;
+    private Dictionary<CharacterType, Dictionary<CharacterName, Dictionary<GameObject,IController>>> _charactersDictionary;
     
     private CharacterFactory _characterFactory;
     private IController _characterController;
 
     public void Initialize()
     {
-        _controllersDictionary = new Dictionary<CharacterType,Dictionary<CharacterName, IController>>();
-        _charactersDictionary = new Dictionary<CharacterType, Dictionary<CharacterName, GameObject>>();
+        _charactersDictionary = new Dictionary<CharacterType, Dictionary<CharacterName, Dictionary<GameObject, IController>>>();
         _characterFactory = new CharacterFactory();
     }
 
@@ -34,14 +32,18 @@ public class CharacterManager : Singleton<CharacterManager>
         HandleController();
     }
 
-    public void AddController(CharacterType type, CharacterName key,IController value)
+    public void AddCharacterToDictionary(CharacterType type, CharacterName characterName, GameObject gameObject ,IController controller)
     {
-        GetControllersDictionaryByType(type).Add(key,value);
-    }
-
-    public void AddCharacterGameObject(CharacterType type, CharacterName characterName, GameObject gameObject)
-    {
-        GetCharacterGameObjectsDictionaryByType(type).Add(characterName, gameObject);
+        var characterTypeDictionary = GetCharacterTypeDictionary(type);
+        if(!characterTypeDictionary.ContainsKey(characterName))
+            characterTypeDictionary.Add(characterName,new Dictionary<GameObject, IController>());
+        foreach (var characterNameDictionary in characterTypeDictionary)
+        {
+            if (characterNameDictionary.Key.Equals(characterName))
+            {
+                characterNameDictionary.Value.Add(gameObject, controller);
+            }
+        }
     }
 
     public void RemoveCharacterByName()
@@ -49,51 +51,37 @@ public class CharacterManager : Singleton<CharacterManager>
         
     }
 
-    public  Dictionary<CharacterName,GameObject> GetCharacterGameObjectsDictionaryByType(CharacterType type)
+    public Dictionary<CharacterName, Dictionary<GameObject, IController>> GetCharacterTypeDictionary(
+        CharacterType characterType)
     {
-        if (_charactersDictionary.ContainsKey(type))
+        if (!_charactersDictionary.ContainsKey(characterType))
         {
-            return _charactersDictionary[type];
+            //Create when Dictionary not exist
+            _charactersDictionary.Add(characterType, new Dictionary<CharacterName, Dictionary<GameObject, IController>>());
         }
-        else
-        {
-            //If not exist create a new dictionary by type.
-            _charactersDictionary.Add(type, new Dictionary<CharacterName, GameObject>());
-            return _charactersDictionary[type];
-        }
-    }
-    public  Dictionary<CharacterName,IController> GetControllersDictionaryByType(CharacterType type)
+        return _charactersDictionary[characterType];
+    } 
+    public  List<Dictionary<GameObject,IController>> GetCharacterGameObjectsDictionaryByType(CharacterType type)
     {
-        if (_controllersDictionary.ContainsKey(type))
+        var Dict = new List<Dictionary<GameObject, IController>>();
+        foreach (var characterNameDictionary in GetCharacterTypeDictionary(type))
         {
-            return _controllersDictionary[type];
+            Dict.Add(characterNameDictionary.Value);
         }
-        else
-        {
-            //If not exist create a new dictionary by type.
-            _controllersDictionary.Add(type, new Dictionary<CharacterName, IController>());
-            return _controllersDictionary[type];
-        }
-        return null;
+        return Dict;
     }
-    public GameObject GetHeroByName(CharacterName characterName)
-    {
-        var characters = GetCharacterGameObjectsDictionaryByType(CharacterType.Hero);
-        if (characters.ContainsKey(characterName))
-            return characters[characterName];
-        else
-        {
-            return null;
-        }
-    }
-
+   
+   
     public List<GameObject> GetHeroGameObjectList()
     {
         var dictionarys = GetCharacterGameObjectsDictionaryByType(CharacterType.Hero);
         var heros = new List<GameObject>();
         foreach (var x in dictionarys)
         {
-            heros.Add(x.Value);
+            foreach (var y in x)
+            {
+                heros.Add(y.Key);
+            }
         }
 
         return heros;
@@ -101,26 +89,47 @@ public class CharacterManager : Singleton<CharacterManager>
 
     public List<IController> GetHeroControllerList()
     {
-        var dictionary = GetControllersDictionaryByType(CharacterType.Hero);
+        var dictionary = GetCharacterGameObjectsDictionaryByType(CharacterType.Hero);
+        Debug.Log("DictCount: " + dictionary.Count);
         var _heroControllers = new List<IController>();
         foreach (var x in dictionary)
         {
-            _heroControllers.Add(x.Value);
+            foreach (var y in x)
+            {
+                _heroControllers.Add(y.Value);
+            }
         }
-
         return _heroControllers;
     }
+    public List<GameObject> GetEnemyGameObjectList()
+    {
+        var dictionarys = GetCharacterGameObjectsDictionaryByType(CharacterType.Enemy);
+        var enemys = new List<GameObject>();
+        foreach (var x in dictionarys)
+        {
+            foreach (var y in x)
+            {
+                enemys.Add(y.Key);
+            } 
+        }
+
+        return enemys;
+    }
+   
+    
     private void HandleController()
     {
-        if(_controllersDictionary == null)
+        if(_charactersDictionary == null)
             return;
-        foreach (var controllers in _controllersDictionary)
+        foreach (var dict in _charactersDictionary)
         {
-            
-            foreach (var controller in controllers.Value)
+            foreach (var dict2 in dict.Value)
             {
-                
-                controller.Value.Handle();
+                foreach (var controller in dict2.Value)
+                {
+                    if(controller.Key.activeInHierarchy)
+                        controller.Value.Handle();
+                }
             }
         }
     }

@@ -10,16 +10,17 @@ public abstract class CharacterController : BaseController, IController
     protected CharacterModel CharacterModel;
     protected CharacterView CharacterView;
     protected CharacterEvent CharacterEvent;
-
+    protected IAttack CharacterAttack;
     protected GameObject Target; 
     protected bool Moving;
 
     public override void SetData(IModel characterModel, IView characterView,
-        CharacterEvent characterEvent)
+        CharacterEvent characterEvent, IAttack characterAttack)
     {
         this.CharacterModel = (CharacterModel)characterModel;
         this.CharacterView = (CharacterView)characterView;
         this.CharacterEvent = characterEvent;
+        this.CharacterAttack = characterAttack;
     }
 
     public override void Initialize()
@@ -63,7 +64,7 @@ public abstract class CharacterController : BaseController, IController
     public virtual void Attack() // Attack when Event in Animation is trigger
     {
         var health = Target.GetComponent<IHealth>();
-        health.TakeDamage(CharacterModel.DamageMin);
+        CharacterAttack.Attack(health,CharacterModel.DamageMin);
         if (health.GetHealth() <= 0)
         {
             health.Die();

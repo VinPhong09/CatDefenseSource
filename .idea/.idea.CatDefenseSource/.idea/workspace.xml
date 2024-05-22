@@ -7,58 +7,29 @@
     <list default="true" id="a2b09a57-ce3d-465a-943d-f7f090846cd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CatDefenseSource/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CatDefenseSource/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Boxer/Cat Boxer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Boxer/Cat Boxer.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Attack2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Cat Murad.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Cat Murad.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/ComboAttack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/ComboAttack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/IdlePrev.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/IdlePrev.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Move.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Move.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Murad.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Cat Murad/Murad.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatBoxer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatBoxer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatFolotilo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatFolotilo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatMurad Fixed.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatMurad Fixed.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatVampire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Character/Hero/CatVampire.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterEffect.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/CatFolotilo/CatFolotiloController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/CatFolotilo/CatFolotiloController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/CatMurad/CatMuradModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/CatMurad/CatMuradModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnumClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnumClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/HeroController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Hero/HeroController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventScripts/New Panel Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventScripts/New Panel Settings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventScripts/OptionBtn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventScripts/OptionBtn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventScripts/ShowTooltipsSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventScripts/ShowTooltipsSkill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventScripts/UIManageScriptInGamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventScripts/UIManageScriptInGamePlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/ICharacterEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/ICharacterEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interface/IController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interface/IController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/PoolManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/PoolManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pattern/Factory/CharacterFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pattern/Factory/CharacterFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Controller/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Controller/BaseController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Controller/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Controller/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Model/CharacterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/Model/CharacterModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/View/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pattern/MVC/View/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skill/Skill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skill/Skill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skill/SkillData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skill/SkillData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HeroItemUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HeroItemUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UICharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIShopController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIShopController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Attack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Attack.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Attack2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Death.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Death.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Idle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Move.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Character/Cat Murad/Move.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/UI/UI/FoloSkill3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Metalic Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/LiberationSans SDF - Metalic Green.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2023.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2023.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,9 +74,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnumClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Decorator/AttackSpeedEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Decorator/BuffDamageEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Decorator/CharacterEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Decorator/LifeStealEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Decorator/ShieldEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Factory/BaseFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Factory/CharacterFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Pooling/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Strategy/IAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pattern/Strategy/MeleeAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skill/BaseSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skill/SkillBaseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skill/SkillUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -116,7 +94,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Button/BaseButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Button/NewGameButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Dialog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Hero/HeroSelectionUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HeroItemUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VinBehavior/EnumParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@2.0.0/Runtime/TMP/TMP_Settings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@2.0.0/Runtime/UGUI/UI/Core/SetPropertyUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@2.0.0/Runtime/UGUI/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -135,32 +115,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.21406728",
-    "git-widget-placeholder": "Dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.21406728&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\dongp\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\dongp\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\dongp\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\dongp\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dongp\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dongp\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Learning\Dev\Unity\Unity Editor\2023.2.12f1\Editor\Unity.exe" />
@@ -188,10 +168,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1344">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1344" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -226,6 +206,13 @@
       <workItem from="1711695861399" duration="12558000" />
       <workItem from="1711776337726" duration="15480000" />
       <workItem from="1711867508273" duration="6919000" />
+      <workItem from="1712137920079" duration="6074000" />
+      <workItem from="1713106246590" duration="2204000" />
+      <workItem from="1713273510700" duration="4578000" />
+      <workItem from="1713333451871" duration="23128000" />
+      <workItem from="1713428682003" duration="6709000" />
+      <workItem from="1713455848091" duration="5450000" />
+      <workItem from="1714546090028" duration="2386000" />
     </task>
     <servers />
   </component>

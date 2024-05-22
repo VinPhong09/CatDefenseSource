@@ -58,7 +58,7 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
     {
         throw new System.NotImplementedException();
     }
-
+    
     public void CreateObject(CharacterType characterType, CharacterName characterName,CharacterModel characterModel,
         IController characterController, Transform position)
     {
@@ -70,9 +70,10 @@ public class CharacterFactory : BaseFactory<CharacterModel,CharacterView,Charact
         var model = characterModel;
         var view = gameObject.GetComponent<IView>();
         var controller = characterController;
-        controller.SetData(model,view,characterEvent);
+        controller.SetData(model,view,characterEvent, new MeeleAttack());
         controller.Initialize();
-        CharacterManager.Instance.AddController(characterType, characterName, controller);
-        CharacterManager.Instance.AddCharacterGameObject(characterType, characterName, gameObject);
+        CharacterManager.Instance.AddCharacterToDictionary(characterType, characterName, gameObject, controller);
+        if(characterType == CharacterType.Enemy)
+            gameObject.SetActive(false);
     }
 }

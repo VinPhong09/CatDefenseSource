@@ -8,14 +8,39 @@ public class UIManageScriptInGamePlay : MonoBehaviour
 
     [SerializeField] protected GameObject _MenuSetting;
     [SerializeField] protected GameObject _TowerScript;
+    [SerializeField] protected GameObject _Shop;
+    [SerializeField] protected GameObject _HeroSelections;
 
+
+    private UIShopController _uiShopController;
     bool _isclickAudio = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
+    public void OnOpenHeroShop()
+    {
+        //Test in this time
+        var gameObjecs = GetGameObjectsInParent();
+        _uiShopController = _Shop.GetComponent<UIShopController>();
+        _uiShopController.init(gameObjecs);
+    }
+
+    public GameObject[] GetGameObjectsInParent()
+    {
+        var gos = new GameObject[_HeroSelections.transform.childCount];
+        for (int i = 0; i < _HeroSelections.transform.childCount; i++)
+        {
+            Transform childTransform = _HeroSelections.transform.GetChild(i);
+            GameObject childObject = childTransform.gameObject;
+            gos[i] = childObject;
+            
+        }
+
+        return gos;
+    }
     // Update is called once per frame
     void Update()
     {

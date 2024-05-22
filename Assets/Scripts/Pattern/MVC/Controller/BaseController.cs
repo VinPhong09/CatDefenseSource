@@ -8,7 +8,7 @@ public class BaseController: IController
     protected BaseModel BaseModel;
     protected BaseView BaseView;
     
-    public virtual void SetData(IModel characterModel, IView characterView, CharacterEvent characterEvent)
+    public virtual void SetData(IModel characterModel, IView characterView, CharacterEvent characterEvent, IAttack characterAttack)
     {
         throw new System.NotImplementedException();
     }
@@ -39,6 +39,16 @@ public class BaseController: IController
     }
 
     public void DetectTarget()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public CharacterView GetCharacterView()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public CharacterModel GetCharacterModel()
     {
         throw new System.NotImplementedException();
     }

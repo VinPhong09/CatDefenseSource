@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public CharacterManager characterManager;
     AudioSource _audio;
-
-    private bool isInitCharacter = true;
+    private CharacterManager _characterManager;
+    private PoolManager _poolManager;
+    private bool _startGame = false;
     protected override void Awake()
     {
         base.Awake();
-        characterManager = GetComponentInChildren<CharacterManager>();
         _audio = GetComponent<AudioSource>();
         _audio.Play();
         DontDestroyOnLoad(this);
@@ -19,23 +18,41 @@ public class GameManager : Singleton<GameManager>
 
      private void Start()
      {
-         characterManager.Initialize();
+         _characterManager = CharacterManager.Instance;
+         _poolManager = PoolManager.Instance;
+         
+         //Initialize Component
+         _characterManager.Initialize();
+         
          QualitySettings.vSyncCount = 0;
          Application.targetFrameRate = 60;
      }
 
+     public void StartGame()
+     {
+         initCharacter();
+         _startGame = true;
+     }
      public void initCharacter()
      {
-         
-         characterManager.CreateCharacter();
-         isInitCharacter = true;
+         _characterManager.CreateCharacter();
+       
+         _poolManager.Initialize();
+         _poolManager.OnPoolEnable();
      }
     // Update is called once per frame
     void Update()
     {
-        if(isInitCharacter)
-            characterManager.Handle();
+        if (_startGame)
+        {
+            _characterManager.Handle();
+            _poolManager.Handle();
+        }
     }
 
+    void OnNextGameLevel()
+    {
+        PoolManager.Instance.OnPoolEnable();
+    }
     
 }
